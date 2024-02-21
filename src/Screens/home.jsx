@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -10,8 +10,17 @@ import card7 from "../Assets/card7.png";
 import MySwiperComponent from "../Components/cards/TestimonialCarousel";
 import Footer from "../Components/footer/Footer";
 import OurClients from "../Components/our-clients/OurClients";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      once: true, // animate only once
+    });
+  }, []);
   const service = [
     {
       id: 1,
@@ -126,7 +135,10 @@ const Home = () => {
 
       {/* Our Clients */}
       <div className="lg:px-24 md:px-10 px-8 h-full  lg:pt-10 md:pt-10 pt-10 pb-5">
-        <p className=" text-center font-trueno text-[48px]">
+        <p
+          data-aos="fade-right"
+          className=" text-center font-trueno text-[48px]"
+        >
           Our{" "}
           <span className=" text-yellow font-trueno text-[48px]">Clients</span>
         </p>
