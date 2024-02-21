@@ -15,11 +15,7 @@ import "aos/dist/aos.css";
 
 const Home = () => {
   useEffect(() => {
-    AOS.init({
-      duration: 800,
-      easing: "ease-in-out",
-      once: true, // animate only once
-    });
+    AOS.init();
   }, []);
   const service = [
     {
@@ -136,7 +132,8 @@ const Home = () => {
       {/* Our Clients */}
       <div className="lg:px-24 md:px-10 px-8 h-full  lg:pt-10 md:pt-10 pt-10 pb-5">
         <p
-          data-aos="fade-right"
+          data-aos="fade-left"
+          data-aos-duration="3000"
           className=" text-center font-trueno text-[48px]"
         >
           Our{" "}
@@ -149,7 +146,11 @@ const Home = () => {
 
       {/* BOED Energy */}
       <div className="lg:px-24 md:px-10 px-8 lg:flex md:grid grid gap-20 pt-10 pb-10">
-        <div className=" lg:w-1/2 md:w-full w-full grid gap-10">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="3000"
+          className=" lg:w-1/2 md:w-full w-full grid gap-10"
+        >
           <div className=" grid gap-8">
             <p className=" text-yellow font-trueno text-[40px]">BOED Energy</p>
             <p className=" text-[14px] font-trueno text-justify">
@@ -175,7 +176,11 @@ const Home = () => {
             </button>
           </div>
         </div>
-        <div className=" lg:w-1/2 md:w-full w-full flex items-center gap-5 ">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="3000"
+          className=" lg:w-1/2 md:w-full w-full flex items-center gap-5 "
+        >
           {/* <img
             className=" h-[458px]"
             src={require("../Assets/Group1.png")}
@@ -193,7 +198,11 @@ const Home = () => {
       </div>
 
       <div className=" bg-[#FDECD2] lg:px-24 md:px-10 px-8 pb-10">
-        <div className=" grid justify-center items-center py-10">
+        <div
+          data-aos="fade-down"
+          data-aos-duration="3000"
+          className=" grid justify-center items-center py-10"
+        >
           <p className=" text-center text-[40px] font-trueno">
             Exceptional{" "}
             <span className="text-[40px] font-trueno text-yellow">
@@ -202,14 +211,22 @@ const Home = () => {
             We Provide
           </p>
         </div>
-        <div className=" grid justify-center items-center">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className=" grid justify-center items-center"
+        >
           <ServiceCard service={service} />
         </div>
       </div>
 
       {/* What We Represent */}
       <div className="lg:px-24 md:px-10 px-8 py-10">
-        <div className=" grid justify-center items-center">
+        <div
+          data-aos="fade-down"
+          data-aos-duration="3000"
+          className=" grid justify-center items-center"
+        >
           <p className=" text-center text-[40px] font-trueno">
             What{" "}
             <span className=" text-[40px] text-yellow font-trueno"> We </span>
@@ -222,14 +239,22 @@ const Home = () => {
           </p>
         </div>
         <div className=" lg:flex md:grid grid gap-32 items-center justify-center pt-10">
-          <div className=" lg:w-1/2 md:w-full w-full">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="3000"
+            className=" lg:w-1/2 md:w-full w-full"
+          >
             <img
               className=" "
               src={require("../Assets/Rectangle14.png")}
               alt=""
             />
           </div>
-          <div className=" lg:w-1/2 md:w-full w-full grid gap-5">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="3000"
+            className=" lg:w-1/2 md:w-full w-full grid gap-5"
+          >
             {/* Card 1 */}
             <div className=" flex gap-5">
               <img
@@ -297,7 +322,11 @@ const Home = () => {
       </div>
 
       {/* Testimonial */}
-      <div className="lg:px-24 md:px-10 px-8  pt-16 pb-10">
+      <div
+        data-aos="fade-down"
+        data-aos-duration="3000"
+        className="lg:px-24 md:px-10 px-8  pt-16 pb-10"
+      >
         <div className=" grid justify-center items-center">
           <p className="font-trueno text-[40px] text-center">
             What People{" "}
