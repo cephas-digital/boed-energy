@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../Components/footer/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="">
       <div className="relative h-full ">
@@ -20,10 +25,18 @@ const About = () => {
       </div>
 
       <div className="lg:px-24 md:px-10 px-8 pb-10 pt-14">
-        <div className=" grid justify-center items-center">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="3000"
+          className=" grid justify-center items-center"
+        >
           <p className=" text-yellow font-trueno text-[40px]">BOED Energy</p>
         </div>
-        <div className=" lg:flex md:grid grid justify-center gap-32 pt-10">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="3000"
+          className=" lg:flex md:grid grid justify-center gap-32 pt-10"
+        >
           <div className=" lg:w-1/2 md:w-full w-full">
             <p className=" text-justify">
               BOED is a multi-sector support service company operating across
@@ -49,6 +62,8 @@ const About = () => {
           </div>
           <div className=" lg:w-1/2 md:w-full w-full grid justify-end">
             <img
+              data-aos="fade-left"
+              data-aos-duration="3000"
               className=" w-[678px] h-[414px]"
               src={require("../Assets/Rectangle111.png")}
               alt=""
@@ -59,7 +74,11 @@ const About = () => {
       {/* Vision, Mission, VALUES */}
       <div className="lg:px-24 md:px-10 px-8 lg:flex md:grid grid gap-16">
         <div className=" lg:w-3/5 md:w-full w-full grid gap-5">
-          <div className=" bg-[#FDEACB] text-black rounded-3xl w-full px-5 py-4">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className=" bg-[#FDEACB] text-black rounded-3xl w-full px-5 py-4"
+          >
             <p className=" text-[20px] font-trueno">Vision</p>
             <p>
               To be a partner with sustainable energy solutions and real
@@ -67,7 +86,11 @@ const About = () => {
               spectrum to become the foremost company in our chosen sectors.
             </p>
           </div>
-          <div className="bg-[#FDEACB] text-black rounded-3xl w-full px-5 py-4">
+          <div
+            data-aos="fade-down"
+            data-aos-duration="3000"
+            className="bg-[#FDEACB] text-black rounded-3xl w-full px-5 py-4"
+          >
             <p className=" text-[20px] font-trueno">Mission</p>
             <p>
               To be the responsive one-stop shop outfit for all the sectors we
@@ -85,7 +108,11 @@ const About = () => {
         </div>
         {/*  */}
         <div className=" lg:w-2/5 md:w-full w-full ">
-          <div className="bg-[#FDEACB] text-black rounded-3xl w-full space-y-5 px-5 py-4">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="3000"
+            className="bg-[#FDEACB] text-black rounded-3xl w-full space-y-5 px-5 py-4"
+          >
             <p className=" text-[20px] font-trueno">VALUES</p>
             <p>
               <span className=" font-trueno text-[18px]">Excellence: </span>to
@@ -113,7 +140,11 @@ const About = () => {
 
       {/* What We Represent */}
       <div className="lg:px-24 md:px-10 px-8 py-16">
-        <div className=" grid justify-center items-center">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className=" grid justify-center items-center"
+        >
           <p className=" text-center text-[40px] font-trueno">
             What{" "}
             <span className=" text-[40px] text-yellow font-trueno"> We </span>
@@ -128,7 +159,11 @@ const About = () => {
 
         <div className=" grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-x-16 gap-y-10 pt-5">
           {/* Card 1 */}
-          <div className=" flex gap-5">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="3000"
+            className=" flex gap-5"
+          >
             <img
               className=" w-[51px] h-[51px]"
               src={require("../Assets/Group15.png")}
@@ -143,7 +178,11 @@ const About = () => {
             </div>
           </div>
           {/* Card 2 */}
-          <div className=" flex gap-5">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className=" flex gap-5"
+          >
             <img
               className=" w-[51px] h-[51px]"
               src={require("../Assets/Group13.png")}
@@ -159,7 +198,11 @@ const About = () => {
             </div>
           </div>
           {/* card 3 */}
-          <div className=" flex gap-5">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="3000"
+            className=" flex gap-5"
+          >
             <img
               className=" w-[51px] h-[51px]"
               src={require("../Assets/Group16.png")}
@@ -175,7 +218,11 @@ const About = () => {
             </div>
           </div>
           {/* Card 4 */}
-          <div className=" flex gap-5">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="3000"
+            className=" flex gap-5"
+          >
             <img
               className=" w-[51px] h-[51px]"
               src={require("../Assets/Group14.png")}
@@ -190,7 +237,11 @@ const About = () => {
             </div>
           </div>
           {/* Card 5 */}
-          <div className=" flex gap-5">
+          <div
+            data-aos="fade-down"
+            data-aos-duration="3000"
+            className=" flex gap-5"
+          >
             <img
               className=" w-[51px] h-[51px]"
               src={require("../Assets/Group177.png")}
@@ -205,7 +256,11 @@ const About = () => {
             </div>
           </div>
           {/* Card 6 */}
-          <div className=" flex gap-5">
+          <div
+            data-aos="fade-down"
+            data-aos-duration="3000"
+            className=" flex gap-5"
+          >
             <img
               className=" w-[51px] h-[51px]"
               src={require("../Assets/Group188.png")}
