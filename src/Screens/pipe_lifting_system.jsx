@@ -29,7 +29,7 @@ const PipeLiftingSystem = () => {
             Pipe Lifting System
           </p>
           <img
-            className=" h-[564px] w-full "
+            className=" lg:h-[564px] w-full "
             src={require("../Assets/Rectangle377.png")}
             alt=""
           />

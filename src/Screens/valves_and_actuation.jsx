@@ -29,7 +29,7 @@ const ValvesAndActuation = () => {
             Valves and Actuation Services
           </p>
           <img
-            className=" h-[564px] w-full "
+            className=" lg:h-[564px] w-full "
             src={require("../Assets/Frame78.png")}
             alt=""
           />

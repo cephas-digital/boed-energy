@@ -29,7 +29,7 @@ const Inspection = () => {
             Inspection and Maintenance Services
           </p>
           <img
-            className=" h-[564px] w-full "
+            className=" lg:h-[564px] w-full "
             src={require("../Assets/Rectangle433.png")}
             alt=""
           />

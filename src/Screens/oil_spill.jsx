@@ -29,7 +29,7 @@ const OilSpill = () => {
             Oil Spill and Waste Water Solutions
           </p>
           <img
-            className=" h-[564px] w-full "
+            className=" lg:h-[564px] w-full "
             src={require("../Assets/Rectangle352.png")}
             alt=""
           />

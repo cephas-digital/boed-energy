@@ -29,7 +29,7 @@ const MarineSupport = () => {
             Marine Support Solutions
           </p>
           <img
-            className=" h-[564px] w-full "
+            className=" lg:h-[564px] w-full "
             src={require("../Assets/Rectangle325.png")}
             alt=""
           />
