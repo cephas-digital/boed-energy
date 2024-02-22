@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -49,9 +50,12 @@ const Footer = () => {
               <p className=" text-white">kevinadinusor@gmail.com</p>
             </div>
             <div>
-              <button className=" rounded-md font-trueno text-[16px] px-4 py-3 bg-white">
+              <Link
+                to="service"
+                className=" rounded-md font-trueno text-[16px] px-4 py-3 bg-white"
+              >
                 Request Service
-              </button>
+              </Link>
             </div>
           </div>
           {/*  */}
@@ -90,9 +94,12 @@ const Footer = () => {
               <p className=" text-white">info@boedenergy.com</p>
             </div>
             <div>
-              <button className=" rounded-md font-trueno text-[16px] px-4 py-3 bg-white">
+              <Link
+                to="service"
+                className=" rounded-md font-trueno text-[16px] px-4 py-3 bg-white"
+              >
                 Request Service
-              </button>
+              </Link>
             </div>
           </div>
 

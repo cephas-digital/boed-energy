@@ -12,6 +12,7 @@ import Footer from "../Components/footer/Footer";
 import OurClients from "../Components/our-clients/OurClients";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   useEffect(() => {
@@ -169,11 +170,14 @@ const Home = () => {
           </div>
 
           <div>
-            <button className="btn41-43 btn-42 flex items-center px-4 py-2 bg-gray text-white">
+            <Link
+              to="/about"
+              className="btn41-43 btn-42 flex items-center justify-center px-4 py-2 bg-gray text-white"
+            >
               <span>Read More</span>
               <span className="ml-1">&#62;</span>
               <span className="ml-1">&#62;</span>
-            </button>
+            </Link>
           </div>
         </div>
         <div
