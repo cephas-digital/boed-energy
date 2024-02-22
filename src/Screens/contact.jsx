@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../Components/footer/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div>
       <div className="relative h-full ">
@@ -23,6 +28,8 @@ const Contact = () => {
       <div className="lg:px-24 md:px-10 px-8 pt-16 pb-10 lg:flex md:grid grid gap-10">
         <div className=" lg:w-[50%] md:w-full w-full">
           <form
+            data-aos="fade-left"
+            data-aos-duration="3000"
             action=""
             className=" bg-[#FDEACB] w-full h-full p-10 gap-5 grid"
           >
@@ -67,14 +74,22 @@ const Contact = () => {
             </div>
           </form>
         </div>
-        <div className=" lg:w-[50%] md:w-full w-full">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="3000"
+          className=" lg:w-[50%] md:w-full w-full"
+        >
           <img src={require("../Assets/Map.png")} alt="" />
         </div>
       </div>
 
       {/*Nigeria, US */}
       <div className="lg:px-24 md:px-10 px-8 pt-10 pb-10">
-        <div className=" bg-[#FDEACB] p-10 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-between items-center">
+        <div
+          data-aos="fade-down"
+          data-aos-duration="3000"
+          className=" bg-[#FDEACB] p-10 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-between items-center"
+        >
           <div className=" lg:w-[280px] grid gap-5">
             <p className=" text-[20px] font-trueno">Nigeria</p>
             <div className=" flex items-center gap-2">

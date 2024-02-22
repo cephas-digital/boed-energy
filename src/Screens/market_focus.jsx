@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ServiceMenu from "../Components/cards/ServiceMenu";
 import SpecializedServiceCard from "../Components/cards/SpecializedServices";
 import OurClients from "../Components/our-clients/OurClients";
 import Footer from "../Components/footer/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const MarketFocus = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div>
       <div className="relative h-full ">
@@ -24,21 +29,33 @@ const MarketFocus = () => {
 
       {/* Our Market Focus */}
       <div className="lg:px-24 md:px-10 px-8 py-16">
-        <p className=" text-center font-trueno lg:text-[40px] md:text-[40px] text-[30px]">
+        <p
+          data-aos="fade-down"
+          data-aos-duration="3000"
+          className=" text-center font-trueno lg:text-[40px] md:text-[40px] text-[30px]"
+        >
           Our{" "}
           <span className="text-center font-trueno lg:text-[40px] md:text-[40px] text-[30px] text-yellow pt-10">
              Market Focus
           </span>
         </p>
         <div className=" lg:flex md:grid grid gap-10 mt-5">
-          <div className=" lg:w-[75%] md:w-full w-full">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className=" lg:w-[75%] md:w-full w-full"
+          >
             <img
               className=" lg:h-[564px] w-full"
               src={require("../Assets/Rectangle312.png")}
               alt=""
             />
           </div>
-          <div className=" lg:w-[35%] md:w-full w-full">
+          <div
+            data-aos="fade-down"
+            data-aos-duration="3000"
+            className=" lg:w-[35%] md:w-full w-full"
+          >
             <ServiceMenu />
           </div>
         </div>
@@ -49,8 +66,7 @@ const MarketFocus = () => {
         <div className=" lg:w-[75%] md:w-full w-full grid gap-10">
           <p className=" text-yellow font-trueno text-[20px]">Oil and Gas</p>
 
-          <div>
-            {" "}
+          <div data-aos="fade-right" data-aos-duration="3000">
             <p>
               The Oil & Gas industry, with its complex processes and critical
               infrastructures, has certain key business imperatives that include
@@ -112,13 +128,21 @@ const MarketFocus = () => {
             </div>
           </div>
         </div>
-        <div className=" lg:w-[35%] md:w-full w-full">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="3000"
+          className=" lg:w-[35%] md:w-full w-full"
+        >
           <SpecializedServiceCard />
         </div>
       </div>
 
       {/*Energy  */}
-      <div className="lg:px-24 md:px-10 px-8">
+      <div
+        data-aos="fade-left"
+        data-aos-duration="3000"
+        className="lg:px-24 md:px-10 px-8"
+      >
         <div className=" grid justify-center items-center gap-8">
           <p className=" text-center font-trueno lg:text-[40px] md:text-[40px] text-[30px] text-yellow">
             Energy
@@ -153,7 +177,11 @@ const MarketFocus = () => {
       </div>
 
       {/*Process Industries  */}
-      <div className="lg:px-24 md:px-10 px-8 py-16">
+      <div
+        data-aos="fade-right"
+        data-aos-duration="3000"
+        className="lg:px-24 md:px-10 px-8 py-16"
+      >
         <div className=" grid justify-center items-center gap-8">
           <p className=" text-center font-trueno lg:text-[40px] md:text-[40px] text-[30px] text-yellow">
             Process Industries
@@ -215,7 +243,11 @@ const MarketFocus = () => {
       </div>
 
       {/*Marine Industries  */}
-      <div className="lg:px-24 md:px-10 px-8 pb-10">
+      <div
+        data-aos="fade-down"
+        data-aos-duration="3000"
+        className="lg:px-24 md:px-10 px-8 pb-10"
+      >
         <div className=" grid justify-center items-center gap-8">
           <div className=" ">
             <p className=" text-center font-trueno lg:text-[40px] md:text-[40px] text-[30px] text-yellow">
@@ -268,7 +300,11 @@ const MarketFocus = () => {
 
       {/* Our Clients */}
       <div className="lg:px-24 md:px-10 px-8 h-full  lg:pt-10 md:pt-10 pt-10 pb-10">
-        <p className=" text-center font-trueno lg:text-[40px] md:text-[40px] text-[30px]">
+        <p
+          data-aos="fade-right"
+          data-aos-duration="3000"
+          className=" text-center font-trueno lg:text-[40px] md:text-[40px] text-[30px]"
+        >
           Our{" "}
           <span className=" text-yellow font-trueno lg:text-[40px] md:text-[40px] text-[30px]">
             Clients
