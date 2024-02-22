@@ -19,7 +19,13 @@ const Nav = () => {
             src={require("../../Assets/Envelope.png")}
             alt=""
           />
-          <p className=" text-white underline">kevinadinusor@gmail.com</p>
+          {/* <p className=" text-white underline">kevinadinusor@gmail.com</p> */}
+          <a
+            className=" text-white underline"
+            href="mailto:kevinadinusor@gmail.com"
+          >
+            kevinadinusor@gmail.com
+          </a>
         </div>
       </div>
 

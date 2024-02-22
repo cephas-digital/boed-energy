@@ -183,7 +183,7 @@ const Navbar = () => {
         </Link>
         <div className=" absolute top-[180px] left-[500px]  z-20 ">
           {isSpecializedServices && (
-            <div className=" bg-white  text-black w-[374px] p-5 overflow-y-scroll h-[300px]">
+            <div className=" bg-white  text-black w-[374px] p-5  h-[300px]">
               <Link
                 to="/pipe_lifting_system"
                 className="  "
