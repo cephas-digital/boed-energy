@@ -6,7 +6,7 @@ import Footer from "../Components/footer/Footer";
 
 const Inspection = () => {
   return (
-    <div>
+    <div className=" overflow-x-hidden">
       <div className="relative h-full ">
         <div
           className=" bg-cover bg-center overflow-y-hidden w-full text-white h-full flex items-center justify-center"

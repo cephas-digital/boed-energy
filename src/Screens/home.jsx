@@ -53,7 +53,7 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div className=" overflow-x-hidden">
       <div className=" overflow-x-hidden overflow-y-hidden xl:h-full lg:h-[100vh] md:h-full h-full">
         <div className="">
           <Slider {...settings} className="  h-full">

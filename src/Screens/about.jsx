@@ -8,7 +8,7 @@ const About = () => {
     AOS.init();
   }, []);
   return (
-    <div className="">
+    <div className=" overflow-x-hidden">
       <div className="relative h-full ">
         <div
           className=" bg-cover bg-center overflow-y-hidden w-full text-white h-full flex items-center justify-center"

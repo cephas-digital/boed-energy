@@ -262,7 +262,7 @@ const Navbar = () => {
         <GiHamburgerMenu size={24} />
       </div>
       {isOpen && (
-        <div className="lg:hidden md:block block md:w-[550px] w-full text-white absolute bg-gray z-20 px-10 py-5 right-0 md:top-48 top-0">
+        <div className="lg:hidden md:block block md:w-[550px] w-full text-white absolute bg-gray z-20 px-10 py-5 right-0 md:top-48 top-0 left-0 ">
           <div
             onClick={closeOpen}
             className=" text-[24px] font-trueno flex justify-end "
