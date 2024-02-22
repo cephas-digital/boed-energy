@@ -11,7 +11,7 @@ const Navbar = () => {
 
   const handleSpecializedServices = () => {
     setIsSpecializedServices(!isSpecializedServices);
-    // Close services if it's open
+
     setIsServices(false);
   };
   const closeSpecializedServices = () => {
@@ -20,7 +20,7 @@ const Navbar = () => {
 
   const handleServices = () => {
     setIsServices(!isServices);
-    // Close specialized services if it's open
+
     setIsSpecializedServices(false);
   };
   const closeServices = () => {
@@ -170,7 +170,7 @@ const Navbar = () => {
           <svg
             onClick={handleSpecializedServices}
             xmlns="http://www.w3.org/2000/svg"
-            class="h-4 w-4 ml-2 mt-1"
+            class="h-5 w-5 ml-2 mt-1"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -181,7 +181,7 @@ const Navbar = () => {
             />
           </svg>
         </Link>
-        <div className=" absolute top-[180px]  z-20 ">
+        <div className=" absolute top-[180px] left-[500px]  z-20 ">
           {isSpecializedServices && (
             <div className=" bg-white  text-black w-[374px] p-5 overflow-y-scroll h-[300px]">
               <Link
