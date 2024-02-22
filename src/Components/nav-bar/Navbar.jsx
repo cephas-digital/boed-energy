@@ -26,6 +26,9 @@ const Navbar = () => {
   const toggleIsOpen = () => {
     setIsOpen(!isOpen);
   };
+  const closeOpen = () => {
+    setIsOpen(false);
+  };
 
   const closeNavbar = () => {
     setIsOpen(false);
@@ -259,7 +262,13 @@ const Navbar = () => {
         <GiHamburgerMenu size={24} />
       </div>
       {isOpen && (
-        <div className="lg:hidden md:block block w-[350px] text-white absolute bg-gray z-20 px-10 py-5 right-0 md:top-48 top-32">
+        <div className="lg:hidden md:block block md:w-[550px] w-full text-white absolute bg-gray z-20 px-10 py-5 right-0 md:top-48 top-0">
+          <div
+            onClick={closeOpen}
+            className=" text-[24px] font-trueno flex justify-end "
+          >
+            <p>X</p>
+          </div>
           <ul className=" grid items-center gap-8">
             <Link
               to="/"
@@ -378,7 +387,7 @@ const Navbar = () => {
                 />
               </svg>
             </Link>
-            <div className=" absolute right-0 bottom-10  z-20 ">
+            <div className=" absolute right-0 md:bottom-[-140px] bottom-10  z-20 ">
               {isSpecializedServices && (
                 <div className=" bg-white  text-black w-[374px] p-5 overflow-y-scroll h-[300px]">
                   <Link

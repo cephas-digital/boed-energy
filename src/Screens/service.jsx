@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import card5 from "../Assets/card5.png";
 import card6 from "../Assets/card6.png";
 import card7 from "../Assets/card7.png";
 import SecServiceCard from "../Components/cards/SecServceCarde";
 import Footer from "../Components/footer/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Service = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const service = [
     {
       id: 1,
@@ -91,7 +96,11 @@ const Service = () => {
       {/* Exceptional Services We Provide */}
       <div className="lg:px-24 md:px-10 px-8 py-16">
         <div className=" grid justify-center items-center">
-          <p className=" text-center lg:text-[40px] md:text-[40px] text-[30px] font-trueno">
+          <p
+            data-aos="fade-right"
+            data-aos-duration="3000"
+            className=" text-center lg:text-[40px] md:text-[40px] text-[30px] font-trueno"
+          >
             Exceptional{" "}
             <span className="text-center lg:text-[40px] md:text-[40px] text-[30px] font-trueno text-yellow">
                Services 
@@ -99,7 +108,7 @@ const Service = () => {
             We Provide
           </p>
         </div>
-        <div className=" py-10">
+        <div data-aos="fade-left" data-aos-duration="3000" className=" py-10">
           <SecServiceCard service={service} />
         </div>
       </div>

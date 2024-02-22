@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../Components/footer/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Projects = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div>
       <div className="relative h-full ">
@@ -21,21 +26,33 @@ const Projects = () => {
 
       <div className="lg:px-24 md:px-10 px-8 pt-16 pb-5">
         <div className=" justify-center items-center grid">
-          <p className=" font-trueno font-extralight text-center lg:w-[780px]">
+          <p
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className=" font-trueno font-extralight text-center lg:w-[780px]"
+          >
             Manufacturing and Supply of-customized-3-Way Ball Valve and Ball
             Valves with Hydraulic Actuator ENERGY VALVES for Shell Bonga FPSO –
             2022 TAMAP
           </p>
         </div>
         <div className=" lg:flex md:grid grid gap-10 pt-10">
-          <div className=" lg:w-1/2 md:w-full w-full">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="3000"
+            className=" lg:w-1/2 md:w-full w-full"
+          >
             <img
               className=" h-full"
               src={require("../Assets/Rectangle299.png")}
               alt=""
             />
           </div>
-          <div className=" lg:w-1/2 md:w-full w-full grid gap-10">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="3000"
+            className=" lg:w-1/2 md:w-full w-full grid gap-10"
+          >
             <img src={require("../Assets/Rectangle300.png")} alt="" />
 
             <img src={require("../Assets/Rectangle310.png")} alt="" />
@@ -44,11 +61,15 @@ const Projects = () => {
       </div>
 
       <div className="lg:px-24 md:px-10 px-8 py-16">
-        <p className=" text-center font-trueno ">
+        <p
+          data-aos="fade-down"
+          data-aos-duration="3000"
+          className=" text-center font-trueno "
+        >
           Insert Plate with Anchor Hooks for -Slabs Walls and Construction
           Joints for NLNG Train 7 Project
         </p>
-        <div className=" pt-10">
+        <div data-aos="fade-right" data-aos-duration="3000" className=" pt-10">
           <img src={require("../Assets/Rectangle311.png")} alt="" />
         </div>
       </div>
