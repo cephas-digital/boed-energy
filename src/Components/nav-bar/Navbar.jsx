@@ -11,6 +11,8 @@ const Navbar = () => {
 
   const handleSpecializedServices = () => {
     setIsSpecializedServices(!isSpecializedServices);
+    // Close services if it's open
+    setIsServices(false);
   };
   const closeSpecializedServices = () => {
     setIsSpecializedServices(false);
@@ -18,6 +20,8 @@ const Navbar = () => {
 
   const handleServices = () => {
     setIsServices(!isServices);
+    // Close specialized services if it's open
+    setIsSpecializedServices(false);
   };
   const closeServices = () => {
     setIsServices(false);
