@@ -91,8 +91,8 @@ const SpecializedServices = () => {
       {/* Exceptional Services We Provide */}
       <div className="lg:px-24 md:px-10 px-8 py-16">
         <div className=" grid justify-center items-center">
-          <p className=" text-center text-[40px] font-trueno">
-            <span className="text-center text-[40px] font-trueno text-yellow">
+          <p className=" text-center lg:text-[40px] md:text-[40px] text-[30px] font-trueno">
+            <span className="text-center lg:text-[40px] md:text-[40px] text-[30px] font-trueno text-yellow">
               Specialized Services 
             </span>
             We Provide

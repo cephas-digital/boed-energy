@@ -203,9 +203,9 @@ const Home = () => {
           data-aos-duration="3000"
           className=" grid justify-center items-center py-10"
         >
-          <p className=" text-center text-[40px] font-trueno">
+          <p className=" text-center lg:text-[40px] md:text-[40px] text-[30px] font-trueno">
             Exceptional{" "}
-            <span className="text-[40px] font-trueno text-yellow">
+            <span className="lg:text-[40px] md:text-[40px] text-[30px] font-trueno text-yellow">
                Services 
             </span>
             We Provide
@@ -227,9 +227,11 @@ const Home = () => {
           data-aos-duration="3000"
           className=" grid justify-center items-center"
         >
-          <p className=" text-center text-[40px] font-trueno">
+          <p className=" text-center lg:text-[40px] md:text-[40px] text-[30px] font-trueno">
             What{" "}
-            <span className=" text-[40px] text-yellow font-trueno"> We </span>
+            <span className=" lg:text-[40px] md:text-[40px] text-[30px] text-yellow font-trueno">
+               We 
+            </span>
             Represent
           </p>
           <p className=" font-truno font-normal text-center lg:w-[650px] md:w-full w-full py-5">
@@ -328,9 +330,11 @@ const Home = () => {
         className="lg:px-24 md:px-10 px-8  pt-16 pb-10"
       >
         <div className=" grid justify-center items-center">
-          <p className="font-trueno text-[40px] text-center">
+          <p className="font-trueno lg:text-[40px] md:text-[40px] text-[30px] text-center">
             What People{" "}
-            <span className=" font-trueno text-[40px] text-yellow">Say</span>
+            <span className=" font-trueno lg:text-[40px] md:text-[40px] text-[30px] text-yellow">
+              Say
+            </span>
           </p>
         </div>
         <MySwiperComponent />

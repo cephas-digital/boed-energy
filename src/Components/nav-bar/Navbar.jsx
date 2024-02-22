@@ -358,11 +358,14 @@ const Navbar = () => {
             </div>
             <Link
               to="/specialized_services"
-              onClick={closeNavbar}
               className="flex items-center justify-between cursor-pointer"
             >
-              Specialized Services
+              <p onClick={closeNavbar} className="">
+                Specialized Services
+              </p>
+
               <svg
+                onClick={handleSpecializedServices}
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-4 w-4 ml-2"
                 viewBox="0 0 20 20"
@@ -375,6 +378,67 @@ const Navbar = () => {
                 />
               </svg>
             </Link>
+            <div className=" absolute right-0 bottom-10  z-20 ">
+              {isSpecializedServices && (
+                <div className=" bg-white  text-black w-[374px] p-5 overflow-y-scroll h-[300px]">
+                  <Link
+                    to="/pipe_lifting_system"
+                    className="  "
+                    onClick={closeSpecializedServices}
+                  >
+                    <p className=" w-full border-b-[0.8px] border-b-[#000000] cursor-pointer py-2 hover:bg-deepyellow hover:text-white">
+                      {" "}
+                      Pipe Lifting System
+                    </p>
+                  </Link>
+                  <Link
+                    to="/safe_isolation_of_passing_valves"
+                    className=" "
+                    onClick={closeSpecializedServices}
+                  >
+                    <p className="border-b-[0.8px] border-b-[#000000] cursor-pointer py-2 hover:bg-deepyellow hover:text-white ">
+                      Safe Isolation of Passing Valves
+                    </p>
+                  </Link>
+                  <Link
+                    to="/leak_detection_solution"
+                    onClick={closeSpecializedServices}
+                    className=" "
+                  >
+                    <p className=" border-b-[0.8px] border-b-[#000000] cursor-pointer py-2 hover:bg-deepyellow hover:text-white">
+                      Leak Detection Solution
+                    </p>
+                  </Link>
+                  <Link
+                    to="/fire_suppression"
+                    onClick={closeSpecializedServices}
+                    className=" "
+                  >
+                    <p className="border-b-[0.8px] border-b-[#000000] cursor-pointer py-2 hover:bg-deepyellow hover:text-white ">
+                      Fire Suppression
+                    </p>
+                  </Link>
+                  <Link
+                    to="/oil_spill_and_waste_water_solutions"
+                    onClick={closeSpecializedServices}
+                    className=" "
+                  >
+                    <p className="border-b-[0.8px] border-b-[#000000] cursor-pointer py-2 hover:bg-deepyellow hover:text-white ">
+                      Oil Spill and Waste Water Solutions
+                    </p>
+                  </Link>
+                  <Link
+                    to="/turbines_and_rotating_equipment_solutions"
+                    onClick={closeSpecializedServices}
+                    className=""
+                  >
+                    <p className=" border-b-[0.8px] border-b-[#000000] cursor-pointer py-2 hover:bg-deepyellow hover:text-white">
+                      Turbines and Rotating  Equipment Solutions
+                    </p>
+                  </Link>
+                </div>
+              )}
+            </div>
             <Link
               to="/projects"
               onClick={closeNavbar}

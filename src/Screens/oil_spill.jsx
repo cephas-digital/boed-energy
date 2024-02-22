@@ -100,9 +100,11 @@ const OilSpill = () => {
 
       {/* Our Clients */}
       <div className="lg:px-24 md:px-10 px-8 h-full  lg:pt-10 md:pt-10 pt-10 pb-5">
-        <p className=" text-center font-trueno text-[48px]">
+        <p className=" text-center font-trueno lg:text-[40px] md:text-[40px] text-[30px]">
           Our{" "}
-          <span className=" text-yellow font-trueno text-[48px]">Clients</span>
+          <span className=" text-yellow font-trueno lg:text-[40px] md:text-[40px] text-[30px]">
+            Clients
+          </span>
         </p>
         <div className=" py-10">
           <OurClients />

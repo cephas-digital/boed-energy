@@ -24,9 +24,9 @@ const MarketFocus = () => {
 
       {/* Our Market Focus */}
       <div className="lg:px-24 md:px-10 px-8 py-16">
-        <p className=" text-center font-trueno text-[40px]">
+        <p className=" text-center font-trueno lg:text-[40px] md:text-[40px] text-[30px]">
           Our{" "}
-          <span className="text-center font-trueno text-[40px] text-yellow pt-10">
+          <span className="text-center font-trueno lg:text-[40px] md:text-[40px] text-[30px] text-yellow pt-10">
              Market Focus
           </span>
         </p>
@@ -120,7 +120,7 @@ const MarketFocus = () => {
       {/*Energy  */}
       <div className="lg:px-24 md:px-10 px-8">
         <div className=" grid justify-center items-center gap-8">
-          <p className=" text-center font-trueno text-[40px] text-yellow">
+          <p className=" text-center font-trueno lg:text-[40px] md:text-[40px] text-[30px] text-yellow">
             Energy
           </p>
           <p className=" lg:w-[630px] text-center ">
@@ -155,7 +155,7 @@ const MarketFocus = () => {
       {/*Process Industries  */}
       <div className="lg:px-24 md:px-10 px-8 py-16">
         <div className=" grid justify-center items-center gap-8">
-          <p className=" text-center font-trueno text-[40px] text-yellow">
+          <p className=" text-center font-trueno lg:text-[40px] md:text-[40px] text-[30px] text-yellow">
             Process Industries
           </p>
           <p className=" lg:w-[630px] text-center ">
@@ -218,7 +218,7 @@ const MarketFocus = () => {
       <div className="lg:px-24 md:px-10 px-8 pb-10">
         <div className=" grid justify-center items-center gap-8">
           <div className=" ">
-            <p className=" text-center font-trueno text-[40px] text-yellow">
+            <p className=" text-center font-trueno lg:text-[40px] md:text-[40px] text-[30px] text-yellow">
               Marine Industries
             </p>
             <p className=" lg:w-[630px] text-center mt-5">
@@ -268,9 +268,11 @@ const MarketFocus = () => {
 
       {/* Our Clients */}
       <div className="lg:px-24 md:px-10 px-8 h-full  lg:pt-10 md:pt-10 pt-10 pb-10">
-        <p className=" text-center font-trueno text-[48px]">
+        <p className=" text-center font-trueno lg:text-[40px] md:text-[40px] text-[30px]">
           Our{" "}
-          <span className=" text-yellow font-trueno text-[48px]">Clients</span>
+          <span className=" text-yellow font-trueno lg:text-[40px] md:text-[40px] text-[30px]">
+            Clients
+          </span>
         </p>
         <div>
           <OurClients />

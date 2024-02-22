@@ -25,7 +25,7 @@ const Engineering = () => {
       {/*Procurement Services  */}
       <div className="lg:px-24 md:px-10 px-8 pt-10  lg:flex md:grid grid items-center gap-10">
         <div className=" lg:w-[75%] md:w-full w-full">
-          <p className=" text-[40px] font-trueno text-yellow py-5">
+          <p className=" lg:text-[40px] md:text-[40px] text-[30px] font-trueno text-yellow py-5">
             Procurement Services
           </p>
           <img
@@ -111,9 +111,11 @@ const Engineering = () => {
 
       {/* Our Clients */}
       <div className="lg:px-24 md:px-10 px-8 h-full  lg:pt-10 md:pt-10 pt-10 pb-5">
-        <p className=" text-center font-trueno text-[48px]">
+        <p className=" text-center font-trueno lg:text-[40px] md:text-[40px] text-[30px]">
           Our{" "}
-          <span className=" text-yellow font-trueno text-[48px]">Clients</span>
+          <span className=" text-yellow font-trueno lg:text-[40px] md:text-[40px] text-[30px]">
+            Clients
+          </span>
         </p>
         <div className=" py-10">
           <OurClients />

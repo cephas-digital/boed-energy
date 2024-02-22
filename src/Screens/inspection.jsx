@@ -15,7 +15,7 @@ const Inspection = () => {
           }}
         >
           <div className="lg:px-8 md:px-10 px-8 text-center lg:py-[120px] md:py-[132px] py-[124px] bg-black items-center grid h-full justify-center w-full bg-opacity-50">
-            <p className="text-animation lg:text-[60px]  md:text-[70px] text-[40px] text-center leading-tight font-trueno">
+            <p className="text-animation lg:text-[60px]  md:text-[70px] text-[30px] text-center leading-tight font-trueno">
               Inspection and Maintenance Services
             </p>
           </div>
@@ -93,9 +93,11 @@ const Inspection = () => {
 
       {/* Our Clients */}
       <div className="lg:px-24 md:px-10 px-8 h-full  lg:pt-10 md:pt-10 pt-10 pb-5">
-        <p className=" text-center font-trueno text-[48px]">
+        <p className=" text-center font-trueno lg:text-[40px] md:text-[40px] text-[30px]">
           Our{" "}
-          <span className=" text-yellow font-trueno text-[48px]">Clients</span>
+          <span className=" text-yellow font-trueno lg:text-[40px] md:text-[40px] text-[30px]">
+            Clients
+          </span>
         </p>
         <div className=" py-10">
           <OurClients />

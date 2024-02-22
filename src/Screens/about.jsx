@@ -145,9 +145,11 @@ const About = () => {
           data-aos-duration="3000"
           className=" grid justify-center items-center"
         >
-          <p className=" text-center text-[40px] font-trueno">
+          <p className=" text-center lg:text-[40px] md:text-[40px] text-[30px] font-trueno">
             What{" "}
-            <span className=" text-[40px] text-yellow font-trueno"> We </span>
+            <span className=" lg:text-[40px] md:text-[40px] text-[30px] text-yellow font-trueno">
+               We 
+            </span>
             Represent
           </p>
           <p className=" font-truno font-normal text-center lg:w-[650px] md:w-full w-full py-5">
