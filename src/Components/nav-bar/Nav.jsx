@@ -22,9 +22,9 @@ const Nav = () => {
           {/* <p className=" text-white underline">kevinadinusor@gmail.com</p> */}
           <a
             className=" text-white underline"
-            href="mailto:kevinadinusor@gmail.com"
+            href="mailto:info@boedenergy.com"
           >
-            kevinadinusor@gmail.com
+            info@boedenergy.com
           </a>
         </div>
       </div>

@@ -157,6 +157,11 @@ const Navbar = () => {
                   Valves and Actuation
                 </p>
               </Link>
+              <Link to="/it_services" onClick={closeServices} className=" ">
+                <p className=" border-b-[0.8px] border-b-[#000000] cursor-pointer py-2 hover:bg-deepyellow hover:text-white">
+                  IT Services
+                </p>
+              </Link>
             </div>
           )}
         </div>
@@ -364,6 +369,11 @@ const Navbar = () => {
                   >
                     <p className=" border-b-[0.8px] border-b-[#000000] cursor-pointer py-2 hover:bg-deepyellow hover:text-white">
                       Valves and Actuation
+                    </p>
+                  </Link>
+                  <Link to="/it_services" onClick={closeServices} className="">
+                    <p className=" border-b-[0.8px] border-b-[#000000] cursor-pointer py-2 hover:bg-deepyellow hover:text-white">
+                      IT Services
                     </p>
                   </Link>
                 </div>

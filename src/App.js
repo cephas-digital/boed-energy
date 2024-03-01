@@ -24,6 +24,7 @@ import LeakDetectionSolution from './Screens/leak_detection_solution';
 import FireSuppression from './Screens/fire_suppression';
 import OilSpill from './Screens/oil_spill';
 import TurbinesandRotating from './Screens/turbines_and_rotating';
+import ItService from './Screens/it_services';
 
 function App() {
 
@@ -55,6 +56,7 @@ function App() {
           <Route path='/fire_suppression' element={<FireSuppression />} />
           <Route path='/oil_spill_and_waste_water_solutions' element={<OilSpill />} />
           <Route path='/turbines_and_rotating_equipment_solutions' element={<TurbinesandRotating />} />
+          <Route path='it_services' element={<ItService />} />
 
         </Routes>
       </BrowserRouter>

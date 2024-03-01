@@ -35,30 +35,28 @@ const About = () => {
         <div
           data-aos="fade-right"
           data-aos-duration="3000"
-          className=" lg:flex md:grid grid justify-center gap-32 pt-10"
+          className=" lg:flex md:grid grid justify-center  pt-10"
         >
-          <div className=" lg:w-1/2 md:w-full w-full">
-            <p className=" text-justify">
-              BOED is a multi-sector support service company operating across
-              Africa. Our sector participation spans from Oil and Gas to
-              Construction to Marine and Energy Sector  to Process Industries
-              with unique solutions in Procurement, Engineering, Safety
-              Solutions, Marine, ICT, and other special solutions. Our focus is
-              on delivering exceptional Engineering, Procurement, Automation,
-              Instrumentation and Safety support services tailored to the
-              customer’s need. As a major procurement, engineering, and Safety
-              solutions company, it is imperative that we not only have
-              world-class resources and expertise but that we are also
-              trustworthy, committed, and translucent in our activities. We are
-              fixed on adhering to the timeline while concentrating on the minor
-              detail of any of our projects. Our determination in persistent
-              training and capacity building of our personnel has allowed us to
-              earn the trust of our clients and establish strong collaboration
-              with all our customers. This business attitude has also helped us
-              build closer working interactions, which we have seen consistently
-              lead to increased levels of services and a more effective
-              engineering outcome.
-            </p>
+          <div className=" lg:w-1/2 md:w-full w-full bg-[#F7A21C] space-y-5 py-4 px-8">
+            <div>
+              <p className=" font-trueno text-[45px]">BOED Energy</p>
+              <p>
+                We are a full-stream energy solutions provider. We own and
+                develop natural resources facilities, and also act as energy
+                partners for our clients.
+              </p>
+            </div>
+            <div className=" space-y-5">
+              <p className=" text-[20px] font-trueno text-black">
+                Empowering Production
+              </p>
+              <p>
+                We are independent and diversified natural resources and energy
+                solutions, provider. We own and develop natural resources
+                facilities, provide a wide range of field services and act as
+                energy partners for our clients.
+              </p>
+            </div>
           </div>
           <div className=" lg:w-1/2 md:w-full w-full grid justify-end">
             <img
@@ -71,75 +69,69 @@ const About = () => {
           </div>
         </div>
       </div>
-      {/* Vision, Mission, VALUES */}
-      <div className="lg:px-24 md:px-10 px-8 lg:flex md:grid grid gap-16">
-        <div className=" lg:w-3/5 md:w-full w-full grid gap-5">
-          <div
-            data-aos="fade-up"
-            data-aos-duration="3000"
-            className=" bg-[#FDEACB] text-black rounded-3xl w-full px-5 py-4"
-          >
-            <p className=" text-[20px] font-trueno">Vision</p>
-            <p>
-              To be a partner with sustainable energy solutions and real
-              solution commitment that goes beyond the service of our market
-              spectrum to become the foremost company in our chosen sectors.
-            </p>
-          </div>
-          <div
-            data-aos="fade-down"
-            data-aos-duration="3000"
-            className="bg-[#FDEACB] text-black rounded-3xl w-full px-5 py-4"
-          >
-            <p className=" text-[20px] font-trueno">Mission</p>
-            <p>
-              To be the responsive one-stop shop outfit for all the sectors we
-              support with these value chains by offering a broad range of
-              cost-effective solutions. Maintain a robust inventory of
-              equipment, parts, and products.
-            </p>
-            <p className=" py-4">
-              Provide repair services to a diverse customer base across multiple
-              sectors and many more, as well deliver stakeholders’ value to our
-              strategic partners and employees and commercial value to our
-              customers.
-            </p>
+
+      {/*  */}
+
+      {/* Vision, Mission,*/}
+      <div className="lg:px-24 md:px-10 px-8 lg:flex md:grid gap-16 py-10 items-center justify-center">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="3000"
+          className=" lg:w-1/2 md:w-full w-full flex items-center"
+        >
+          <img src={require("../Assets/left.png")} alt="" />
+          <div className=" grid justify-center absolute lg:w-[425px] ml-10 lg:pr-0 md:pr-0 pr-8">
+            <div className="flex items-center justify-center ">
+              <img
+                className=" w-[46px] h-[46px]"
+                src={require("../Assets/Eye.png")}
+                alt=""
+              />
+              <p className=" font-trueno text-[#F7A21C] text-[20px]">Vision</p>
+            </div>
+            <div className=" pt-5">
+              <p className=" text-center">
+                To become the preferred world-class energy solutions
+                provider in Nigeria
+              </p>
+            </div>
           </div>
         </div>
-        {/*  */}
-        <div className=" lg:w-2/5 md:w-full w-full ">
-          <div
-            data-aos="fade-left"
-            data-aos-duration="3000"
-            className="bg-[#FDEACB] text-black rounded-3xl w-full space-y-5 px-5 py-4"
-          >
-            <p className=" text-[20px] font-trueno">VALUES</p>
-            <p>
-              <span className=" font-trueno text-[18px]">Excellence: </span>to
-              channel all resources at perfect and seamless delivery
-            </p>
-            <p>
-              <span className=" font-trueno text-[18px]">Customization: </span>
-              to We aim at providing bespoke solutions tailored at meeting
-              customer’s needs.
-            </p>
-            <p>
-              <span className=" font-trueno text-[18px]">Performance: </span>
-              We aim to be best in class with results, in offering our customer
-              value added service, to achieve excellence, in an ethical and
-              responsible way.
-            </p>
-            <p>
-              <span className=" font-trueno text-[18px]">Responsibility: </span>
-              BUED takes pride in keeping our deliverable with safety as our
-              first duty, wherever we are. No compromise, at all levels.
-            </p>
+        <div
+          data-aos="fade-left"
+          data-aos-duration="3000"
+          className=" lg:w-1/2 md:w-full w-full flex items-center relative"
+        >
+          <div className=" grid justify-center absolute lg:w-[425px] lg:pr-0 md:pr-5 pr-2">
+            <div className="flex items-center justify-center">
+              <img
+                className=" w-[46px] h-[36.85px]"
+                src={require("../Assets/pngwing.png")}
+                alt=""
+              />
+              <p className=" font-trueno text-[#F7A21C] text-[20px]">Mission</p>
+            </div>
+            <div className=" pt-3">
+              <p className=" text-center">
+                To continuously execute value-adding, industry-leading services
+                and solutions that are client-focused, in the most economically
+                efficient, environmentally-friendly, socially responsible, and
+                sustainable manner for the benefit of all stakeholders.
+              </p>
+            </div>
           </div>
+          <img src={require("../Assets/right.png")} alt="" />
         </div>
       </div>
 
       {/* What We Represent */}
-      <div className="lg:px-24 md:px-10 px-8 py-16">
+      {/* What We Represent */}
+      <div
+        style={{
+          backgroundImage: `url(${require("../Assets/mapp.png")})`,
+        }}
+        className="lg:px-24 md:px-10 px-8 py-10 bg-cover bg-center"
+      >
         <div
           data-aos="fade-up"
           data-aos-duration="3000"

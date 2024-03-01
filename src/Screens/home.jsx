@@ -13,6 +13,9 @@ import OurClients from "../Components/our-clients/OurClients";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
+import service1 from "../Assets/service1.png";
+import service2 from "../Assets/service2.png";
+import service3 from "../Assets/service3.png";
 
 const Home = () => {
   useEffect(() => {
@@ -52,6 +55,63 @@ const Home = () => {
     autoplaySpeed: 2000,
     rtl: false, // Set to true for right to left sliding
   };
+
+  const serviceCard = [
+    {
+      id: 1,
+      img: service1,
+      text: "Marine Support Solution",
+      desc: "We provide process & pressure safety, technical & vessel operation support, subsea life of field services etc.",
+    },
+    {
+      id: 2,
+      img: service2,
+      text: "Procurement",
+      desc: "We provide process & pressure safety, technical & vessel operation support, subsea life of field services etc.",
+    },
+    {
+      id: 3,
+      img: service3,
+      text: "Engineering",
+      desc: "We provide process & pressure safety, technical & vessel operation support, subsea life of field services etc.",
+    },
+    {
+      id: 4,
+      img: service1,
+      text: "Metering & Instrumentation",
+      desc: "We provide process & pressure safety, technical & vessel operation support, subsea life of field services etc.",
+    },
+    {
+      id: 5,
+      img: service2,
+      text: "Inspection & Maintenance",
+      desc: "We provide process & pressure safety, technical & vessel operation support, subsea life of field services etc.",
+    },
+    {
+      id: 6,
+      img: service3,
+      text: "Safety solutions",
+      desc: "We provide process & pressure safety, technical & vessel operation support, subsea life of field services etc.",
+    },
+    {
+      id: 7,
+      img: service1,
+      text: "Fire Security",
+      desc: "We provide process & pressure safety, technical & vessel operation support, subsea life of field services etc.",
+    },
+    {
+      id: 8,
+      img: service2,
+      text: "Valves and Actuation",
+      desc: "We provide process & pressure safety, technical & vessel operation support, subsea life of field services etc.",
+    },
+    {
+      id: 9,
+      img: service3,
+      text: "IT Solutions",
+      desc: "We provide process & pressure safety, technical & vessel operation support, subsea life of field services etc.",
+    },
+  ];
 
   return (
     <div className=" overflow-x-hidden">
@@ -131,7 +191,7 @@ const Home = () => {
       </div>
 
       {/* Our Clients */}
-      <div className="lg:px-24 md:px-10 px-8 h-full  lg:pt-10 md:pt-10 pt-10 pb-5">
+      {/*  <div className="lg:px-24 md:px-10 px-8 h-full  lg:pt-10 md:pt-10 pt-10 pb-5">
         <p
           data-aos="fade-left"
           data-aos-duration="3000"
@@ -143,14 +203,14 @@ const Home = () => {
         <div>
           <OurClients />
         </div>
-      </div>
+              </div> */}
 
       {/* BOED Energy */}
-      <div className="lg:px-24 md:px-10 px-8 lg:flex md:grid grid gap-20 pt-10 pb-10">
+      <div className="lg:px-24 md:px-10 px-8 lg:flex md:grid grid gap-x-20 ">
         <div
           data-aos="fade-right"
           data-aos-duration="3000"
-          className=" lg:w-1/2 md:w-full w-full grid gap-10"
+          className=" lg:w-1/2 md:w-full w-full grid gap-10 pt-10 pb-10"
         >
           <div className=" grid gap-8">
             <p className=" text-yellow font-trueno text-[40px]">BOED Energy</p>
@@ -185,23 +245,26 @@ const Home = () => {
           data-aos-duration="3000"
           className=" lg:w-1/2 md:w-full w-full flex items-center gap-5 "
         >
-          {/* <img
-            className=" h-[458px]"
-            src={require("../Assets/Group1.png")}
-            alt=""
-          /> */}
-          <div className=" grid gap-5">
+          <img className=" " src={require("../Assets/Group300.png")} alt="" />
+          {/* <div className=" grid gap-5">
             <img src={require("../Assets/Rectangle1.png")} alt="" />
             <img src={require("../Assets/Rectangle2.png")} alt="" />
           </div>
           <div className=" grid gap-5">
             <img src={require("../Assets/Rectangle3.png")} alt="" />
             <img src={require("../Assets/Rectangle4.png")} alt="" />
-          </div>
+          </div> */}
         </div>
       </div>
+      <div className=" absolute flex justify-start ">
+        <img
+          className=" h-[600px]"
+          src={require("../Assets/Group400.png")}
+          alt=""
+        />
+      </div>
 
-      <div className=" bg-[#FDECD2] lg:px-24 md:px-10 px-8 pb-10">
+      {/* <div className=" bg-[#FDECD2] lg:px-24 md:px-10 px-8 pb-10">
         <div
           data-aos="fade-down"
           data-aos-duration="3000"
@@ -222,10 +285,186 @@ const Home = () => {
         >
           <ServiceCard service={service} />
         </div>
+      </div> */}
+
+      <div className="lg:px-24 md:px-10 px-8 py-10">
+        <div>
+          <p className=" text-center lg:text-[40px] md:text-[40px] text-[30px] font-trueno">
+            Exceptional{" "}
+            <span className="lg:text-[40px] md:text-[40px] text-[30px] text-yellow font-trueno">
+               Services 
+            </span>
+            We Provide
+          </p>
+        </div>
+        <div className=" justify-center grid py-14">
+          <div className=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
+            {serviceCard.map((item) => (
+              <div
+                data-aos="fade-left"
+                data-aos-duration="3000"
+                key={item.id}
+                className=" bg-[#F7A21C] lg:w-[350px] items-center px-3 py-6 gap-3 md:w-[350px] w-full rounded-md text-black flex"
+              >
+                <img className=" w-[42px] h-[42px]" src={item.img} alt="" />
+                <div className=" grid">
+                  <p className=" font-bold font-trueno text-[18px] text[#000000]">
+                    {item.text}
+                  </p>
+                  <p className="">{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
 
       {/* What We Represent */}
-      <div className="lg:px-24 md:px-10 px-8 py-10">
+      <div
+        style={{
+          backgroundImage: `url(${require("../Assets/mapp.png")})`,
+        }}
+        className="lg:px-24 md:px-10 px-8 py-10 bg-cover bg-center"
+      >
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className=" grid justify-center items-center"
+        >
+          <p className=" text-center lg:text-[40px] md:text-[40px] text-[30px] font-trueno">
+            What{" "}
+            <span className=" lg:text-[40px] md:text-[40px] text-[30px] text-yellow font-trueno">
+               We 
+            </span>
+            Represent
+          </p>
+          <p className=" font-truno font-normal text-center lg:w-[650px] md:w-full w-full py-5">
+            BOED Energy is a response to emerging trends on how quality services
+            should be rendered in our market focus area, in partnership with
+            skilled foreign affiliates and highly experienced professionals.
+          </p>
+        </div>
+
+        <div className=" grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-x-16 gap-y-10 pt-5">
+          {/* Card 1 */}
+          <div
+            data-aos="fade-left"
+            data-aos-duration="3000"
+            className=" flex gap-5"
+          >
+            <img
+              className=" w-[51px] h-[51px]"
+              src={require("../Assets/Group15.png")}
+              alt=""
+            />
+            <div className=" grid">
+              <p className=" font-trueno text-[20px]">Safety:</p>
+              <p className=" ">
+                We have high safety standards and a strong commitment to
+                achieving zero accidents.
+              </p>
+            </div>
+          </div>
+          {/* Card 2 */}
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className=" flex gap-5"
+          >
+            <img
+              className=" w-[51px] h-[51px]"
+              src={require("../Assets/Group13.png")}
+              alt=""
+            />
+            <div className=" grid">
+              <p className=" font-trueno text-[20px]">Performance:</p>
+              <p className=" ">
+                We assist customers by contributing to budgets efficiencies,
+                improved performance, and reduced timelines – even in the face
+                of tight and complex projects
+              </p>
+            </div>
+          </div>
+          {/* card 3 */}
+          <div
+            data-aos="fade-left"
+            data-aos-duration="3000"
+            className=" flex gap-5"
+          >
+            <img
+              className=" w-[51px] h-[51px]"
+              src={require("../Assets/Group16.png")}
+              alt=""
+            />
+            <div className=" grid">
+              <p className=" font-trueno text-[20px]">Value:</p>
+              <p className=" ">
+                We take pride in our continuous improvement efforts and our
+                commitment to best practices, which has added value to our
+                clients’ experience of us..
+              </p>
+            </div>
+          </div>
+          {/* Card 4 */}
+          <div
+            data-aos="fade-right"
+            data-aos-duration="3000"
+            className=" flex gap-5"
+          >
+            <img
+              className=" w-[51px] h-[51px]"
+              src={require("../Assets/Group14.png")}
+              alt=""
+            />
+            <div className=" grid">
+              <p className=" font-trueno text-[20px]">Experience:</p>
+              <p className="">
+                We take pride in our personnels, and partners’ experiences,
+                engineered equipment & the value we render to clients.
+              </p>
+            </div>
+          </div>
+          {/* Card 5 */}
+          <div
+            data-aos="fade-down"
+            data-aos-duration="3000"
+            className=" flex gap-5"
+          >
+            <img
+              className=" w-[51px] h-[51px]"
+              src={require("../Assets/Group177.png")}
+              alt=""
+            />
+            <div className=" grid">
+              <p className=" font-trueno text-[20px]">Commitment:</p>
+              <p className="">
+                Our methodology manages the success of every project to
+                guarantee that Clients’ expectations are always meet.
+              </p>
+            </div>
+          </div>
+          {/* Card 6 */}
+          <div
+            data-aos="fade-down"
+            data-aos-duration="3000"
+            className=" flex gap-5"
+          >
+            <img
+              className=" w-[51px] h-[51px]"
+              src={require("../Assets/Group188.png")}
+              alt=""
+            />
+            <div className=" grid">
+              <p className=" font-trueno text-[20px]"> Quality:</p>
+              <p className="">
+                We have steady Performance Improvement & Value Proposition in
+                everything We Do
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* <div className="lg:px-24 md:px-10 px-8 py-10">
         <div
           data-aos="fade-down"
           data-aos-duration="3000"
@@ -261,7 +500,7 @@ const Home = () => {
             data-aos-duration="3000"
             className=" lg:w-1/2 md:w-full w-full grid gap-5"
           >
-            {/* Card 1 */}
+           
             <div className=" flex gap-5">
               <img
                 className=" w-[51px] h-[51px]"
@@ -277,7 +516,7 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            {/* Card 2 */}
+           
             <div className=" flex gap-5">
               <img
                 className=" w-[51px] h-[51px]"
@@ -292,7 +531,7 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            {/* Card 3 */}
+          
             <div className=" flex gap-5">
               <img
                 className=" w-[51px] h-[51px]"
@@ -307,7 +546,7 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            {/* Card 4 */}
+          
             <div className=" flex gap-5">
               <img
                 className=" w-[51px] h-[51px]"
@@ -325,7 +564,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Testimonial */}
       <div

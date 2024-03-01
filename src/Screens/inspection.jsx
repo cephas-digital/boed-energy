@@ -1,7 +1,7 @@
 import React from "react";
 import ServiceMenu from "../Components/cards/ServiceMenu";
 import SpecializedServiceCard from "../Components/cards/SpecializedServices";
-import OurClients from "../Components/our-clients/OurClients";
+
 import Footer from "../Components/footer/Footer";
 
 const Inspection = () => {
@@ -99,9 +99,9 @@ const Inspection = () => {
             Clients
           </span>
         </p>
-        <div className=" py-10">
+        {/* <div className=" py-10">
           <OurClients />
-        </div>
+        </div> */}
       </div>
 
       {/* Footer */}
