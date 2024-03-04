@@ -206,27 +206,32 @@ const Home = () => {
               </div> */}
 
       {/* BOED Energy */}
-      <div className="lg:px-24 md:px-10 px-8 lg:flex md:grid grid gap-x-20 ">
+      <div className="lg:px-24 md:px-10 px-8 lg:flex md:grid grid gap-x-10 ">
         <div
           data-aos="fade-right"
           data-aos-duration="3000"
-          className=" lg:w-1/2 md:w-full w-full grid gap-10 pt-10 pb-10"
+          className=" lg:w-[45%] md:w-full w-full grid gap-10 pt-10 pb-10"
         >
           <div className=" grid gap-8">
-            <p className=" text-yellow font-trueno text-[40px]">BOED Energy</p>
-            <p className=" text-[14px] font-trueno text-justify">
-              BOED Energy is a multi-sector support service company operating
-              across Africa. Our sector participation spans from Oil and Gas to
-              Construction to Marine and Energy Sector  to Process Industries
-              with unique solutions in Procurement, Engineering, Safety
-              Solutions, Marine, ICT, and other special solutions. Our focus is
-              on delivering exceptional Engineering, Procurement, Automation,
-              Instrumentation and Safety support services tailored to the
-              customer’s need. As a major procurement, engineering, and Safety
-              solutions company, it is imperative that we not only have
-              world-class resources and expertise but that we are also
-              trustworthy, committed, and translucent in our activities.
-            </p>
+            <div className=" grid gap-8">
+              <p className=" text-yellow font-trueno text-[40px]">
+                BOED Energy
+              </p>
+              <p className="  text-[20px] font-medium text-justify opacity-80">
+                We are a full-stream energy solutions provider. We own and
+                develop natural resources facilities, and also act as energy
+                partners for our clients.
+              </p>
+              <p className=" font-trueno text-black text-[24px]">
+                Empowering Production
+              </p>
+              <p className="text-[20px] font-medium text-justify opacity-80">
+                We are independent and diversified natural resources and energy
+                solutions, provider. We own and develop natural resources
+                facilities, provide a wide range of field services and act as
+                energy partners for our clients.
+              </p>
+            </div>
           </div>
 
           <div>
@@ -243,9 +248,13 @@ const Home = () => {
         <div
           data-aos="fade-left"
           data-aos-duration="3000"
-          className=" lg:w-1/2 md:w-full w-full flex items-center gap-5 "
+          className=" lg:w-[55%] md:w-full w-full flex items-center gap-5 "
         >
-          <img className=" " src={require("../Assets/Group300.png")} alt="" />
+          <img
+            className=" h-auto "
+            src={require("../Assets/Group300.png")}
+            alt=""
+          />
           {/* <div className=" grid gap-5">
             <img src={require("../Assets/Rectangle1.png")} alt="" />
             <img src={require("../Assets/Rectangle2.png")} alt="" />
