@@ -3,7 +3,7 @@ import React from "react";
 const NavService = () => {
   return (
     <div className=" lg:flex md:flex flex items-center gap-5">
-      <button className=" rounded-md lg:w-[150px] md:w-[120px] w-[100px] text-black h-[50px] bg-white">
+      {/* <button className=" rounded-md lg:w-[150px] md:w-[120px] w-[100px] text-black h-[50px] bg-white">
         Request Service
       </button>
 
@@ -21,7 +21,7 @@ const NavService = () => {
             clip-rule="evenodd"
           />
         </svg>
-      </button>
+      </button> */}
     </div>
   );
 };
