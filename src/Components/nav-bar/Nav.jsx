@@ -3,7 +3,7 @@ import NavService from "./NavService";
 
 const Nav = () => {
   return (
-    <div className=" lg:px-16 md:px-10 px-8 flex items-center relative  lg:gap-0 md:gap-3 gap-5 justify-between bg-[#666666]">
+    <div className=" lg:px-16 md:px-10 px-8 flex items-center relative  lg:gap-0 md:gap-3 gap-5 justify-between py-5 bg-[#666666]">
       <div className=" lg:flex md:flex grid items-center lg:gap-10">
         <div className=" flex items-center gap-2">
           <img
@@ -11,7 +11,7 @@ const Nav = () => {
             src={require("../../Assets/PhoneCal.png")}
             alt=""
           />
-          <p className=" text-white">+2349031762727 | +2349087300448</p>
+          <p className=" text-white">+2349031762727 | +44 7979 188208</p>
         </div>
         <div className=" flex items-center gap-2 lg:pr-0 md:pr-10 pr-5">
           <img

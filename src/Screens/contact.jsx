@@ -72,6 +72,11 @@ const Contact = () => {
                 rows="10"
               ></textarea>
             </div>
+            <div className=" grid justify-center items-center">
+              <button className=" w-[251px] h-[64px] bg-[#000] text-white rounded-md font-trueno">
+                Send
+              </button>
+            </div>
           </form>
         </div>
         <div
@@ -108,7 +113,6 @@ const Contact = () => {
               />
               <div>
                 <p>NG +2349031762727</p>
-                <p>NG +2349087300448</p>
               </div>
             </div>
             <div className=" flex items-center gap-2">

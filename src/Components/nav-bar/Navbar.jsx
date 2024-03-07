@@ -8,6 +8,11 @@ const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [isServices, setIsServices] = useState(false);
   const [isSpecializedServices, setIsSpecializedServices] = useState(false);
+  const [activeLink, setActiveLink] = useState("");
+
+  const handleLinkClick = (link) => {
+    setActiveLink(link);
+  };
 
   const handleSpecializedServices = () => {
     setIsSpecializedServices(!isSpecializedServices);
@@ -68,15 +73,30 @@ const Navbar = () => {
         />
       </div>
       <ul className=" lg:flex md:hidden hidden items-center gap-8">
-        <Link to="/" className=" text-deepyellow cursor-pointer">
+        <Link
+          onClick={() => handleLinkClick("/")}
+          to="/"
+          className={` text-black hover:text-deepyellow cursor-pointer ${
+            activeLink === "/" && "text-deepyellow"
+          }`}
+        >
           Home
         </Link>
-        <Link to="/about" className="cursor-pointer">
+        <Link
+          onClick={() => handleLinkClick("/about")}
+          to="/about"
+          className={`cursor-pointer hover:text-deepyellow ${
+            activeLink === "/about" && "text-deepyellow"
+          }`}
+        >
           About
         </Link>
         <Link
+          onClick={() => handleLinkClick("/service")}
           to="/service"
-          className="flex items-center justify-between cursor-pointer"
+          className={`flex items-center  justify-between cursor-pointer hover:text-deepyellow ${
+            activeLink === "/service" && "text-deepyellow"
+          } `}
         >
           Services
           <svg
@@ -168,8 +188,11 @@ const Navbar = () => {
 
         {/* Spe... */}
         <Link
+          onClick={() => handleLinkClick("/specialized_services")}
           to="/specialized_services"
-          className="flex items-center justify-between cursor-pointer"
+          className={`flex items-center justify-between cursor-pointer hover:text-deepyellow ${
+            activeLink === "/specialized_services" && "text-deepyellow"
+          }`}
         >
           Specialized Services
           <svg
@@ -247,13 +270,31 @@ const Navbar = () => {
             </div>
           )}
         </div>
-        <Link to="/projects" className="cursor-pointer">
+        <Link
+          onClick={() => handleLinkClick("/projects")}
+          to="/projects"
+          className={`cursor-pointer hover:text-deepyellow ${
+            activeLink === "/project" && "text-deepyellow"
+          }`}
+        >
           Projects
         </Link>
-        <Link to="/market_focus" className="cursor-pointer">
+        <Link
+          onClick={() => handleLinkClick("/market_focus")}
+          to="/market_focus"
+          className={`cursor-pointer hover:text-deepyellow ${
+            activeLink === "/market_focus" && "text-deepyellow"
+          }`}
+        >
           Market Focus
         </Link>
-        <Link to="/contact" className="cursor-pointer">
+        <Link
+          onClick={() => handleLinkClick("/contact")}
+          to="/contact"
+          className={`cursor-pointer hover:text-deepyellow ${
+            activeLink === "/contact" && "text-deepyellow"
+          }`}
+        >
           Contact
         </Link>
       </ul>

@@ -37,7 +37,6 @@ const Footer = () => {
               />
               <div>
                 <p className=" text-white">NG +2349031762727</p>
-                <p className=" text-white">NG +2349087300448</p>
               </div>
             </div>
             <div className=" flex items-center w-[280px] gap-2">
@@ -47,7 +46,7 @@ const Footer = () => {
                 alt=""
               />
 
-              <p className=" text-white">kevinadinusor@gmail.com</p>
+              <p className=" text-white">info@boedenergy.com</p>
             </div>
             <div>
               <Link
@@ -71,7 +70,7 @@ const Footer = () => {
                 alt=""
               />
               <p className=" text-white">
-                18 Sighthill Gardens, Edinburgh Scotland United Kingdom
+                18 Sighthill Gardens, Edinburgh Scotland United Kingdom eh114nw
               </p>
             </div>
             <div className=" flex items-center w-[280px] gap-2">
