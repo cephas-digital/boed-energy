@@ -3,6 +3,7 @@ import ServiceMenu from "../Components/cards/ServiceMenu";
 import SpecializedServiceCard from "../Components/cards/SpecializedServices";
 
 import Footer from "../Components/footer/Footer";
+import OurClients from "../Components/our-clients/OurClients";
 
 const LeakDetectionSolution = () => {
   return (
@@ -109,9 +110,9 @@ const LeakDetectionSolution = () => {
             Clients
           </span>
         </p>
-        {/* <div className=" py-10">
+        <div className=" py-10">
           <OurClients />
-        </div> */}
+        </div>
       </div>
 
       {/* Footer */}

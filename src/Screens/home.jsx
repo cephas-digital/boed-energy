@@ -191,7 +191,7 @@ const Home = () => {
       </div>
 
       {/* Our Clients */}
-      {/*  <div className="lg:px-24 md:px-10 px-8 h-full  lg:pt-10 md:pt-10 pt-10 pb-5">
+      <div className="lg:px-24 md:px-10 px-8 h-full  lg:pt-10 md:pt-10 pt-10 pb-5">
         <p
           data-aos="fade-left"
           data-aos-duration="3000"
@@ -203,7 +203,7 @@ const Home = () => {
         <div>
           <OurClients />
         </div>
-              </div> */}
+      </div>
 
       {/* BOED Energy */}
       <div className="lg:px-24 md:px-10 px-8 lg:flex md:grid grid gap-x-10 ">

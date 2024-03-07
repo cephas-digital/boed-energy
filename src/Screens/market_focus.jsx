@@ -5,6 +5,7 @@ import SpecializedServiceCard from "../Components/cards/SpecializedServices";
 import Footer from "../Components/footer/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import OurClients from "../Components/our-clients/OurClients";
 
 const MarketFocus = () => {
   useEffect(() => {
@@ -310,9 +311,9 @@ const MarketFocus = () => {
             Clients
           </span>
         </p>
-        {/* <div>
+        <div>
           <OurClients />
-        </div> */}
+        </div>
       </div>
 
       {/* Footer */}

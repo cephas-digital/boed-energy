@@ -1,40 +1,35 @@
 import React from "react";
-import client1 from "../../Assets/client1.png";
-import client2 from "../../Assets/client2.png";
 
 const OurClients = () => {
   const clients = [
     {
       id: 1,
-      img: client1,
+      img: require("../../Assets/Cl1.jpg"),
     },
     {
       id: 2,
-      img: client2,
+      img: require("../../Assets/Cl6.jpg"),
     },
     {
-      id: 1,
-      img: client1,
+      id: 3,
+      img: require("../../Assets/Cl2.jpg"),
     },
     {
-      id: 2,
-      img: client2,
+      id: 4,
+      img: require("../../Assets/Cl4.jpg"),
     },
     {
-      id: 1,
-      img: client1,
+      id: 5,
+      img: require("../../Assets/Cl5.jpg"),
     },
     {
-      id: 2,
-      img: client2,
+      id: 6,
+      img: require("../../Assets/Cl3.jpg"),
     },
+
     {
-      id: 1,
-      img: client1,
-    },
-    {
-      id: 2,
-      img: client2,
+      id: 7,
+      img: require("../../Assets/Cl8.jpg"),
     },
   ];
   return (

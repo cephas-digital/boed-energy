@@ -109,9 +109,9 @@ const ItService = () => {
             Clients
           </span>
         </p>
-        {/* <div className=" py-10">
+        <div className=" py-10">
           <OurClients />
-        </div> */}
+        </div>
       </div>
 
       {/* Footer */}
