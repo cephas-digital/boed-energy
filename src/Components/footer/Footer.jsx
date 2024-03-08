@@ -121,7 +121,7 @@ const Footer = () => {
                 <Link
                   to="/"
                   onClick={() => setActive("/")}
-                  className={`text-center font-trueno py-3 text-white w-full border border-b-[0.7] border-b-white border-t-0 border-r-0 border-l-0 ${
+                  className={`text-center font-trueno py-3 hover:bg-white hover:text-gray hover:bg-white hover:text-gray text-white w-full border border-b-[0.7] border-b-white border-t-0 border-r-0 border-l-0 ${
                     activeLink === "/" && "text-deepyellow"
                   }`}
                 >
@@ -130,7 +130,7 @@ const Footer = () => {
                 <Link
                   to="/about"
                   onClick={() => setActive("/about")}
-                  className={`text-center font-trueno py-3 text-white w-full border border-b-[0.7] border-b-white border-t-0 border-r-0 border-l-0 ${
+                  className={`text-center font-trueno py-3 hover:bg-white hover:text-gray text-white w-full border border-b-[0.7] border-b-white border-t-0 border-r-0 border-l-0 ${
                     activeLink === "/about" && "text-deepyellow"
                   }`}
                 >
@@ -139,7 +139,7 @@ const Footer = () => {
                 <Link
                   to="/service"
                   onClick={() => setActive("/service")}
-                  className={`text-center font-trueno py-3 text-white w-full border border-b-[0.7] border-b-white border-t-0 border-r-0 border-l-0 ${
+                  className={`text-center font-trueno py-3 hover:bg-white hover:text-gray text-white w-full border border-b-[0.7] border-b-white border-t-0 border-r-0 border-l-0 ${
                     activeLink === "/service" && "text-deepyellow"
                   }`}
                 >
@@ -148,7 +148,7 @@ const Footer = () => {
                 <Link
                   to="/projects"
                   onClick={() => setActive("/projects")}
-                  className={`text-center font-trueno py-3 text-white w-full border border-b-[0.7] border-b-white border-t-0 border-r-0 border-l-0 ${
+                  className={`text-center font-trueno py-3 hover:bg-white hover:text-gray text-white w-full border border-b-[0.7] border-b-white border-t-0 border-r-0 border-l-0 ${
                     activeLink === "/projects" && "text-deepyellow"
                   }`}
                 >
@@ -157,7 +157,7 @@ const Footer = () => {
                 <Link
                   to="/contact"
                   onClick={() => setActive("/contact")}
-                  className={`text-center font-trueno py-3 text-white w-full border border-b-0 border-b-white border-t-0 border-r-0 border-l-0 ${
+                  className={`text-center font-trueno py-3 hover:bg-white hover:text-gray text-white w-full border border-b-0 border-b-white border-t-0 border-r-0 border-l-0 ${
                     activeLink === "/contact" && "text-deepyellow"
                   }`}
                 >
