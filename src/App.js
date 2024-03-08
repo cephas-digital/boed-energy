@@ -25,40 +25,43 @@ import FireSuppression from './Screens/fire_suppression';
 import OilSpill from './Screens/oil_spill';
 import TurbinesandRotating from './Screens/turbines_and_rotating';
 import ItService from './Screens/it_services';
+import { ActiveLinkProvider } from './Components/scroll-to/ActiveLinkContext';
 
 function App() {
 
   return (
     <div className="App">
       <BrowserRouter>
-        <Nav />
-        <Navbar />
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/service' element={<Service />} />
-          <Route path='/specialized_services' element={<SpecializedServices />} />
-          <Route path='/projects' element={<Projects />} />
-          <Route path='/market_focus' element={<MarketFocus />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/procurement' element={<Procurement />} />
-          <Route path='/engineering' element={<Engineering />} />
-          <Route path='/metering_and_instrumentation' element={<Metering />} />
-          <Route path='/inspection' element={<Inspection />} />
-          <Route path='/safety_solutions' element={<SafetySolutions />} />
-          <Route path='/marine_support_solutions' element={<MarineSupport />} />
-          <Route path='/valves_and_actuation_services' element={<ValvesAndActuation />} />
-          <Route path='/pipe_lifting_system' element={<PipeLiftingSystem />} />
-          <Route path='/safe_isolation_of_passing_valves' element={<SafeIsolation />} />
-          <Route path='/integrated_security_and_fire_solutions' element={<IntegratedSecurity />} />
-          <Route path='/leak_detection_solution' element={<LeakDetectionSolution />} />
-          <Route path='/fire_suppression' element={<FireSuppression />} />
-          <Route path='/oil_spill_and_waste_water_solutions' element={<OilSpill />} />
-          <Route path='/turbines_and_rotating_equipment_solutions' element={<TurbinesandRotating />} />
-          <Route path='/it_services' element={<ItService />} />
+        <ActiveLinkProvider>
+          <Nav />
+          <Navbar />
+          <ScrollToTop />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/service' element={<Service />} />
+            <Route path='/specialized_services' element={<SpecializedServices />} />
+            <Route path='/projects' element={<Projects />} />
+            <Route path='/market_focus' element={<MarketFocus />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/procurement' element={<Procurement />} />
+            <Route path='/engineering' element={<Engineering />} />
+            <Route path='/metering_and_instrumentation' element={<Metering />} />
+            <Route path='/inspection' element={<Inspection />} />
+            <Route path='/safety_solutions' element={<SafetySolutions />} />
+            <Route path='/marine_support_solutions' element={<MarineSupport />} />
+            <Route path='/valves_and_actuation_services' element={<ValvesAndActuation />} />
+            <Route path='/pipe_lifting_system' element={<PipeLiftingSystem />} />
+            <Route path='/safe_isolation_of_passing_valves' element={<SafeIsolation />} />
+            <Route path='/integrated_security_and_fire_solutions' element={<IntegratedSecurity />} />
+            <Route path='/leak_detection_solution' element={<LeakDetectionSolution />} />
+            <Route path='/fire_suppression' element={<FireSuppression />} />
+            <Route path='/oil_spill_and_waste_water_solutions' element={<OilSpill />} />
+            <Route path='/turbines_and_rotating_equipment_solutions' element={<TurbinesandRotating />} />
+            <Route path='/it_services' element={<ItService />} />
 
-        </Routes>
+          </Routes>
+        </ActiveLinkProvider>
       </BrowserRouter>
     </div>
   );

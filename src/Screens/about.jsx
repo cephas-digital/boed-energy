@@ -40,7 +40,7 @@ const About = () => {
           <div className=" lg:w-1/2 md:w-full w-full bg-[#F7A21C] space-y-5 py-4 px-8">
             <div>
               <p className=" font-trueno text-[45px]">BOED Energy</p>
-              <p>
+              <p className=" text-[20px] font-truenolt">
                 We are a full-stream energy solutions provider. We own and
                 develop natural resources facilities, and also act as energy
                 partners for our clients.
@@ -50,7 +50,7 @@ const About = () => {
               <p className=" text-[20px] font-trueno text-black">
                 Empowering Production
               </p>
-              <p>
+              <p className=" text-[20px] font-truenolt">
                 We are independent and diversified natural resources and energy
                 solutions, provider. We own and develop natural resources
                 facilities, provide a wide range of field services and act as

@@ -7,6 +7,14 @@
   font-family: "trueno";
 }
 
+@font-face {
+  font-family: "truenolt";
+  src: url(../Assets/trueno/TruenoLt.otf);
+}
+.font-truenolt {
+  font-family: "truenolt";
+}
+
 /* Custom CSS for marquee effect */
 .marquee-container {
   overflow: hidden;

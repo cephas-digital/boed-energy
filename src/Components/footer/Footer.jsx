@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useActiveLink } from "../scroll-to/ActiveLinkContext";
 
 const Footer = () => {
+  const { activeLink, setActive } = useActiveLink();
   return (
     <div className=" py-10">
       <div className=" lg:px-16 md:px-10 px-8 ">
@@ -118,31 +120,46 @@ const Footer = () => {
               <div className="w-full grid">
                 <Link
                   to="/"
-                  className="text-center font-trueno py-3 text-white w-full border border-b-[0.7] border-b-white border-t-0 border-r-0 border-l-0"
+                  onClick={() => setActive("/")}
+                  className={`text-center font-trueno py-3 text-white w-full border border-b-[0.7] border-b-white border-t-0 border-r-0 border-l-0 ${
+                    activeLink === "/" && "text-deepyellow"
+                  }`}
                 >
                   Home
                 </Link>
                 <Link
                   to="/about"
-                  className="text-center font-trueno py-3 text-white w-full border border-b-[0.7] border-b-white border-t-0 border-r-0 border-l-0"
+                  onClick={() => setActive("/about")}
+                  className={`text-center font-trueno py-3 text-white w-full border border-b-[0.7] border-b-white border-t-0 border-r-0 border-l-0 ${
+                    activeLink === "/about" && "text-deepyellow"
+                  }`}
                 >
                   About
                 </Link>
                 <Link
                   to="/service"
-                  className="text-center font-trueno py-3 text-white w-full border border-b-[0.7] border-b-white border-t-0 border-r-0 border-l-0"
+                  onClick={() => setActive("/service")}
+                  className={`text-center font-trueno py-3 text-white w-full border border-b-[0.7] border-b-white border-t-0 border-r-0 border-l-0 ${
+                    activeLink === "/service" && "text-deepyellow"
+                  }`}
                 >
                   Services
                 </Link>
                 <Link
                   to="/projects"
-                  className="text-center font-trueno py-3 text-white w-full border border-b-[0.7] border-b-white border-t-0 border-r-0 border-l-0"
+                  onClick={() => setActive("/projects")}
+                  className={`text-center font-trueno py-3 text-white w-full border border-b-[0.7] border-b-white border-t-0 border-r-0 border-l-0 ${
+                    activeLink === "/projects" && "text-deepyellow"
+                  }`}
                 >
                   Projects
                 </Link>
                 <Link
                   to="/contact"
-                  className="text-center font-trueno py-3 text-white w-full border border-b-0 border-b-white border-t-0 border-r-0 border-l-0"
+                  onClick={() => setActive("/contact")}
+                  className={`text-center font-trueno py-3 text-white w-full border border-b-0 border-b-white border-t-0 border-r-0 border-l-0 ${
+                    activeLink === "/contact" && "text-deepyellow"
+                  }`}
                 >
                   Contact
                 </Link>

@@ -43,11 +43,11 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="lg:px-24 md:px-10 px-8 pt-16 pb-5 grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10">
+      <div className="lg:px-24 md:px-10 px-8 pt-16 pb-5 grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-x-5 lg:gap-y-10  gap-10">
         {project.map((i) => (
           <div key={i.id} className=" grid lg:w-[520px]">
             <img src={i.img} alt="" />
-            <div className=" h-[143px] bg-[#666666] w-full text-white justify-center items-center grid text-[24px] px-5 ">
+            <div className=" h-[140px] bg-[#666666] w-full text-white justify-center items-center grid text-[24px] px-5 ">
               <p>{i.text}</p>
             </div>
           </div>

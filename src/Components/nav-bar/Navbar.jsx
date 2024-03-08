@@ -2,17 +2,19 @@ import React, { useEffect, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import NavService from "./NavService";
 import { Link } from "react-router-dom";
+import { useActiveLink } from "../scroll-to/ActiveLinkContext";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
   const [isServices, setIsServices] = useState(false);
   const [isSpecializedServices, setIsSpecializedServices] = useState(false);
-  const [activeLink, setActiveLink] = useState("");
+  const { activeLink, setActive } = useActiveLink();
+  // const [activeLink, setActiveLink] = useState("");
 
-  const handleLinkClick = (link) => {
-    setActiveLink(link);
-  };
+  // const handleLinkClick = (link) => {
+  //   setActiveLink(link);
+  // };
 
   const handleSpecializedServices = () => {
     setIsSpecializedServices(!isSpecializedServices);
@@ -74,7 +76,8 @@ const Navbar = () => {
       </div>
       <ul className=" lg:flex md:hidden hidden items-center gap-8">
         <Link
-          onClick={() => handleLinkClick("/")}
+          // onClick={() => handleLinkClick("/")}
+          onClick={() => setActive("/")}
           to="/"
           className={` text-black hover:text-deepyellow cursor-pointer ${
             activeLink === "/" && "text-deepyellow"
@@ -83,7 +86,7 @@ const Navbar = () => {
           Home
         </Link>
         <Link
-          onClick={() => handleLinkClick("/about")}
+          onClick={() => setActive("/about")}
           to="/about"
           className={`cursor-pointer hover:text-deepyellow ${
             activeLink === "/about" && "text-deepyellow"
@@ -92,7 +95,7 @@ const Navbar = () => {
           About
         </Link>
         <Link
-          onClick={() => handleLinkClick("/service")}
+          onClick={() => setActive("/service")}
           to="/service"
           className={`flex items-center  justify-between cursor-pointer hover:text-deepyellow ${
             activeLink === "/service" && "text-deepyellow"
@@ -188,7 +191,7 @@ const Navbar = () => {
 
         {/* Spe... */}
         <Link
-          onClick={() => handleLinkClick("/specialized_services")}
+          onClick={() => setActive("/specialized_services")}
           to="/specialized_services"
           className={`flex items-center justify-between cursor-pointer hover:text-deepyellow ${
             activeLink === "/specialized_services" && "text-deepyellow"
@@ -270,17 +273,18 @@ const Navbar = () => {
             </div>
           )}
         </div>
+
         <Link
-          onClick={() => handleLinkClick("/projects")}
+          onClick={() => setActive("/projects")}
           to="/projects"
           className={`cursor-pointer hover:text-deepyellow ${
-            activeLink === "/project" && "text-deepyellow"
+            activeLink === "/projects" && "text-deepyellow"
           }`}
         >
           Projects
         </Link>
         <Link
-          onClick={() => handleLinkClick("/market_focus")}
+          onClick={() => setActive("/market_focus")}
           to="/market_focus"
           className={`cursor-pointer hover:text-deepyellow ${
             activeLink === "/market_focus" && "text-deepyellow"
@@ -289,7 +293,7 @@ const Navbar = () => {
           Market Focus
         </Link>
         <Link
-          onClick={() => handleLinkClick("/contact")}
+          onClick={() => setActive("/contact")}
           to="/contact"
           className={`cursor-pointer hover:text-deepyellow ${
             activeLink === "/contact" && "text-deepyellow"
