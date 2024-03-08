@@ -115,22 +115,37 @@ const Footer = () => {
                   Menu
                 </p>
               </div>
-              <div className="w-full">
-                <p className="text-center font-trueno py-3 text-white w-full border border-b-[0.7] border-b-white border-t-0 border-r-0 border-l-0">
+              <div className="w-full grid">
+                <Link
+                  to="/"
+                  className="text-center font-trueno py-3 text-white w-full border border-b-[0.7] border-b-white border-t-0 border-r-0 border-l-0"
+                >
                   Home
-                </p>
-                <p className="text-center font-trueno py-3 text-white w-full border border-b-[0.7] border-b-white border-t-0 border-r-0 border-l-0">
+                </Link>
+                <Link
+                  to="/about"
+                  className="text-center font-trueno py-3 text-white w-full border border-b-[0.7] border-b-white border-t-0 border-r-0 border-l-0"
+                >
                   About
-                </p>
-                <p className="text-center font-trueno py-3 text-white w-full border border-b-[0.7] border-b-white border-t-0 border-r-0 border-l-0">
+                </Link>
+                <Link
+                  to="/service"
+                  className="text-center font-trueno py-3 text-white w-full border border-b-[0.7] border-b-white border-t-0 border-r-0 border-l-0"
+                >
                   Services
-                </p>
-                <p className="text-center font-trueno py-3 text-white w-full border border-b-[0.7] border-b-white border-t-0 border-r-0 border-l-0">
+                </Link>
+                <Link
+                  to="/projects"
+                  className="text-center font-trueno py-3 text-white w-full border border-b-[0.7] border-b-white border-t-0 border-r-0 border-l-0"
+                >
                   Projects
-                </p>
-                <p className="text-center font-trueno py-3 text-white w-full border border-b-0 border-b-white border-t-0 border-r-0 border-l-0">
+                </Link>
+                <Link
+                  to="/contact"
+                  className="text-center font-trueno py-3 text-white w-full border border-b-0 border-b-white border-t-0 border-r-0 border-l-0"
+                >
                   Contact
-                </p>
+                </Link>
               </div>
             </div>
           </div>

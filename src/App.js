@@ -56,7 +56,7 @@ function App() {
           <Route path='/fire_suppression' element={<FireSuppression />} />
           <Route path='/oil_spill_and_waste_water_solutions' element={<OilSpill />} />
           <Route path='/turbines_and_rotating_equipment_solutions' element={<TurbinesandRotating />} />
-          <Route path='it_services' element={<ItService />} />
+          <Route path='/it_services' element={<ItService />} />
 
         </Routes>
       </BrowserRouter>

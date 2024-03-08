@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ServiceMenu = () => {
   return (
@@ -7,31 +8,61 @@ const ServiceMenu = () => {
         <div className=" bg-deepyellow text-black text-[20px] font-trueno py-3 px-5">
           Service Menu
         </div>
-        <ul className=" w-full pt-10 ">
-          <li className=" border-b-[0.5px] border-t-[0.5px] border-t-gray border-b-gray py-3 text-center">
+        <ul className=" w-full grid  pt-10 ">
+          <Link
+            to="/procurement"
+            className=" border-b-[0.5px]  border-t-[0.5px] border-t-gray border-b-gray py-3 text-center"
+          >
             Procurement
-          </li>
-          <li className=" border-b-[0.5px] border-b-gray py-3 text-center">
+          </Link>
+          <Link
+            to="/engineering"
+            className=" border-b-[0.5px] border-b-gray py-3 text-center"
+          >
             Engineering
-          </li>
-          <li className=" border-b-[0.5px] border-b-gray py-3 text-center">
+          </Link>
+          <Link
+            to="/integrated_security_and_fire_solutions"
+            className=" border-b-[0.5px] border-b-gray py-3 text-center"
+          >
             Integrated Security
-          </li>
-          <li className=" border-b-[0.5px] border-b-gray py-3 text-center">
+          </Link>
+          <Link
+            to="/metering_and_instrumentation"
+            className=" border-b-[0.5px] border-b-gray py-3 text-center"
+          >
             Metering & Instrumentation
-          </li>
-          <li className=" border-b-[0.5px] border-b-gray py-3 text-center">
+          </Link>
+          <Link
+            to="/inspection"
+            className=" border-b-[0.5px] border-b-gray py-3 text-center"
+          >
             Inspection & Maintenace
-          </li>
-          <li className=" border-b-[0.5px] border-b-gray py-3 text-center">
+          </Link>
+          <Link
+            to="/safety_solutions"
+            className=" border-b-[0.5px] border-b-gray py-3 text-center"
+          >
             Safety Solutions
-          </li>
-          <li className=" border-b-[0.5px] border-b-gray py-3 text-center">
+          </Link>
+          <Link
+            to="/marine_support_solutions"
+            className=" border-b-[0.5px] border-b-gray py-3 text-center"
+          >
             Marine Support Solutions
-          </li>
-          <li className=" border-b-[0.5px] border-b-gray py-3 text-center">
+          </Link>
+          <Link
+            to="/valves_and_actuation_services"
+            className=" border-b-[0.5px] border-b-gray py-3 text-center"
+          >
             Valves Actuatuation
-          </li>
+          </Link>
+          <Link
+            to="/it_services"
+            className=" border-b-[0.5px] border-b-gray py-3 text-center"
+          >
+            IT Services
+          </Link>
         </ul>
       </div>
     </div>
