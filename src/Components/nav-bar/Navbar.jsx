@@ -116,7 +116,7 @@ const Navbar = () => {
             />
           </svg>
         </Link>
-        <div className=" absolute top-[180px] z-20 ">
+        <div className=" absolute top-[170px] z-20 ">
           {isServices && (
             <div className=" bg-white  text-black w-[374px] p-5 overflow-y-scroll h-[300px]">
               <Link to="/procurement" className="  " onClick={closeServices}>
@@ -212,7 +212,7 @@ const Navbar = () => {
             />
           </svg>
         </Link>
-        <div className=" absolute top-[180px] left-[500px]  z-20 ">
+        <div className=" absolute top-[170px] left-[500px]  z-20 ">
           {isSpecializedServices && (
             <div className=" bg-white  text-black w-[374px] p-5  h-[300px]">
               <Link
@@ -302,13 +302,13 @@ const Navbar = () => {
           Contact
         </Link>
       </ul>
-      <div className=" lg:block md:block hidden">
+      {/* <div className=" lg:block md:block hidden">
         <img
           className=" w-[32px] h-[32px]"
           src={require("../../Assets/MagnifyingGlass.png")}
           alt=""
         />
-      </div>
+      </div> */}
       <div
         onClick={toggleIsOpen}
         className=" lg:hidden md:block block cursor-pointer"
@@ -356,7 +356,7 @@ const Navbar = () => {
             </Link>
             <div className=" absolute top-[180px] z-20 ">
               {isServices && (
-                <div className=" bg-white  text-black lg:w-[374px] md:w-[374px] w-full h-auto p-5">
+                <div className=" bg-white  text-black lg:w-[374px] md:w-[374px] mt-5 w-full h-auto p-5">
                   <Link to="/procurement" className="" onClick={closeServices}>
                     <p className=" border-b-[0.8px] border-b-[#000000] cursor-pointer py-2 hover:bg-deepyellow hover:text-white ">
                       Procurement
@@ -446,9 +446,9 @@ const Navbar = () => {
                 />
               </svg>
             </Link>
-            <div className=" absolute right-0 md:bottom-[-140px] bottom-10  z-20 ">
+            <div className=" absolute right-0 md:bottom-[-140px] bottom-0  z-20 ">
               {isSpecializedServices && (
-                <div className=" bg-white  text-black w-[374px] p-5 overflow-y-scroll h-[300px]">
+                <div className=" bg-white  text-black w-[374px] p-5  overflow-y-scroll h-[300px]">
                   <Link
                     to="/pipe_lifting_system"
                     className="  "
@@ -525,13 +525,13 @@ const Navbar = () => {
               Contact
             </Link>
           </ul>
-          <div className=" lg:hidden md:hidden block py-5">
+          {/* <div className=" lg:hidden md:hidden block py-5">
             <img
               className=" w-[32px] h-[32px]"
               src={require("../../Assets/MagnifyingGlass.png")}
               alt=""
             />
-          </div>
+          </div> */}
           {/* Buttons */}
           <div className=" lg:hidden md:hidden block py-5 items-center gap-5">
             <NavService />
