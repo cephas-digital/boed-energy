@@ -55,7 +55,7 @@ const OurClients = () => {
           </div>
         ))}
       </div> */}
-      <div className="marquee flex py-5">
+      <div className="marquee flex py-5 gap-10">
         {clients.map((item) => (
           <img
             key={item.id}
