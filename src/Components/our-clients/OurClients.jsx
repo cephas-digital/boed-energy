@@ -12,24 +12,34 @@ const OurClients = () => {
     },
     {
       id: 3,
-      img: require("../../Assets/Cl2.jpg"),
-    },
-    {
-      id: 4,
-      img: require("../../Assets/Cl4.jpg"),
-    },
-    {
-      id: 5,
-      img: require("../../Assets/Cl5.jpg"),
-    },
-    {
-      id: 6,
       img: require("../../Assets/Cl3.jpg"),
     },
 
     {
+      id: 4,
+      img: require("../../Assets/Mobil.png"),
+    },
+    {
+      id: 5,
+      img: require("../../Assets/Shall.png"),
+    },
+    {
+      id: 6,
+      img: require("../../Assets/Cl4.jpg"),
+    },
+    {
       id: 7,
-      img: require("../../Assets/Cl8.jpg"),
+      img: require("../../Assets/Cl2.jpg"),
+    },
+
+    {
+      id: 8,
+      img: require("../../Assets/Cl5.jpg"),
+    },
+
+    {
+      id: 9,
+      img: require("../../Assets/totalEnergyy.png"),
     },
   ];
   return (

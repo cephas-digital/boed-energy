@@ -54,14 +54,14 @@ const TestimonialCarousel = () => {
   const data = [
     {
       id: 1,
-      text: "Chief Donatus Dede",
+      text: "Dr. Abena Kwesi",
       description:
-        "A team of highly professionals with integrity. This is a company i will do business with over and again because of their prompt delivery and professional approach to handling issues.",
+        "Boed Energy has proven to be a beacon of reliability and professionalism in the energy sector. Their commitment to excellence and prompt delivery is commendable. I am grateful for their exceptional service and look forward to continued collaboration.",
       img: stars,
     },
     {
       id: 2,
-      text: "Chief Donatus",
+      text: "Eng Tunde Adebayo",
       description:
         "A team of highly professionals with integrity. This is a company i will do business with over and again because of their prompt delivery and professional approach to handling issues.",
       img: stars,
@@ -70,28 +70,28 @@ const TestimonialCarousel = () => {
       id: 3,
       text: "Chief Donatus Dede",
       description:
-        "A team of highly professionals with integrity. This is a company i will do business with over and again because of their prompt delivery and professional approach to handling issues.",
+        "I am impressed by the efficiency and professionalism demonstrated by Boed Energy. Their team's dedication to excellence and integrity sets them apart in the industry. I am confident in recommending their services to others seeking reliable energy solutions.",
       img: stars,
     },
     {
       id: 4,
-      text: "Donatus Dede",
+      text: "Dr. Temitope Adewale",
       description:
-        "A team of highly professionals with integrity. This is a company i will do business with over and again because of their prompt delivery and professional approach to handling issues.",
+        "Boed Energy has consistently delivered exceptional service with integrity and professionalism. Their prompt response and attention to detail have made them our preferred energy provider. I am grateful for their reliable service and look forward to future collaborations.",
       img: stars,
     },
     {
       id: 5,
-      text: "Chief Donatus Dede",
+      text: "Mr. Chukwudi Eze",
       description:
-        "A team of highly professionals with integrity. This is a company i will do business with over and again because of their prompt delivery and professional approach to handling issues.",
+        "I am delighted to share my positive experience with Boed Energy. Their team's commitment to excellence and prompt delivery have exceeded my expectations. I highly recommend their services to anyone in need of reliable energy solutions.",
       img: stars,
     },
     {
       id: 6,
-      text: "Chief Dede",
+      text: "Mrs. Efe Okonkwo",
       description:
-        "A team of highly professionals with integrity. This is a company i will do business with over and again because of their prompt delivery and professional approach to handling issues.",
+        "Boed Energy has consistently delivered exceptional service with integrity and professionalism. Their prompt response and attention to detail have made them our preferred energy provider. I am grateful for their reliable service and look forward to future collaborations.",
       img: stars,
     },
   ];
