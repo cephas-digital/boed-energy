@@ -61,55 +61,55 @@ const Home = () => {
       id: 1,
       img: service1,
       text: "Marine Support Solution",
-      desc: "We provide process & pressure safety, technical & vessel operation support, subsea life of field services etc.",
+      desc: "We provide expert marine support – process & pressure safety, vessel operations, and subsea solutions.",
     },
     {
       id: 2,
       img: service2,
       text: "Procurement",
-      desc: "We provide process & pressure safety, technical & vessel operation support, subsea life of field services etc.",
+      desc: "We source everything you need, from safety gear to subsea solutions, so you can focus on building, not searching",
     },
     {
       id: 3,
       img: service3,
       text: "Engineering",
-      desc: "We provide process & pressure safety, technical & vessel operation support, subsea life of field services etc.",
+      desc: "Our design, build, and optimization expertise helps you bring your vision to life, from the ground up.",
     },
     {
       id: 4,
       img: service1,
       text: "Metering & Instrumentation",
-      desc: "We provide process & pressure safety, technical & vessel operation support, subsea life of field services etc.",
+      desc: " We provide the data-driven insights you need to make informed decisions and optimize your project's performance.",
     },
     {
       id: 5,
       img: service2,
       text: "Inspection & Maintenance",
-      desc: "We provide process & pressure safety, technical & vessel operation support, subsea life of field services etc.",
+      desc: "We keep your project running smoothly and safely, from topside to subsea, with our comprehensive inspection and maintenance",
     },
     {
       id: 6,
       img: service3,
       text: "Safety solutions",
-      desc: "We provide process & pressure safety, technical & vessel operation support, subsea life of field services etc.",
+      desc: "Safety is our top priority. We offer solutions to keep your crew and assets safe throughout all stages of construction.",
     },
     {
       id: 7,
       img: service1,
       text: "Fire Security",
-      desc: "We provide process & pressure safety, technical & vessel operation support, subsea life of field services etc.",
+      desc: "We offer comprehensive fire security solutions for your project, keeping your crew and assets safe.",
     },
     {
       id: 8,
       img: service2,
       text: "Valves and Actuation",
-      desc: "We provide process & pressure safety, technical & vessel operation support, subsea life of field services etc.",
+      desc: "Our valve and actuation expertise ensures efficient fluid management, keeping your project running smoothly.",
     },
     {
       id: 9,
       img: service3,
       text: "IT Solutions",
-      desc: "We provide process & pressure safety, technical & vessel operation support, subsea life of field services etc.",
+      desc: "We offer IT solutions that connect your construction project and streamline communication, ensuring success.",
     },
   ];
 
@@ -313,7 +313,7 @@ const Home = () => {
                 data-aos="fade-left"
                 data-aos-duration="3000"
                 key={item.id}
-                className=" bg-[#F7A21C] lg:w-[350px] items-center px-3 py-6 gap-3 md:w-[350px] w-full rounded-md text-black flex"
+                className=" bg-[#F7A21C] lg:w-[350px]  px-3 py-6 gap-3 md:w-[350px] w-full rounded-md text-black flex"
               >
                 <img className=" w-[42px] h-[42px]" src={item.img} alt="" />
                 <div className=" grid">
