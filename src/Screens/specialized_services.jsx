@@ -33,48 +33,6 @@ const SpecializedServices = () => {
       desc: "We provide process & pressure safety, technical & vessel operation support, subsea life of field services etc.",
       btn: "Show More ",
     },
-    {
-      id: 4,
-      imgg: card5,
-      text: "Marine Support Solution",
-      desc: "We provide process & pressure safety, technical & vessel operation support, subsea life of field services etc.",
-      btn: "Show More ",
-    },
-    {
-      id: 5,
-      imgg: card6,
-      text: "Valves and Actuation",
-      desc: "We provide process & pressure safety, technical & vessel operation support, subsea life of field services etc.",
-      btn: "Show More ",
-    },
-    {
-      id: 6,
-      imgg: card7,
-      text: "Engineering",
-      desc: "We provide process & pressure safety, technical & vessel operation support, subsea life of field services etc.",
-      btn: "Show More ",
-    },
-    {
-      id: 7,
-      imgg: card5,
-      text: "Marine Support Solution",
-      desc: "We provide process & pressure safety, technical & vessel operation support, subsea life of field services etc.",
-      btn: "Show More ",
-    },
-    {
-      id: 8,
-      imgg: card6,
-      text: "Valves and Actuation",
-      desc: "We provide process & pressure safety, technical & vessel operation support, subsea life of field services etc.",
-      btn: "Show More ",
-    },
-    {
-      id: 9,
-      imgg: card7,
-      text: "Engineering",
-      desc: "We provide process & pressure safety, technical & vessel operation support, subsea life of field services etc.",
-      btn: "Show More ",
-    },
   ];
   return (
     <div className=" overflow-x-hidden">
