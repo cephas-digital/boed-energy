@@ -77,7 +77,7 @@ const MarketFocus = () => {
             </p>
             <br /> <br />
             <p>
-              Since its inception in 2017, T Triangle has steadily come to be
+              Since its inception in 2017, BOED Energy has steadily come to be
               one of the very top, most trusted and sought-after partners in the
               Oil & Gas Industry within her serve area.
             </p>{" "}
@@ -189,7 +189,7 @@ const MarketFocus = () => {
           </p>
           <p className=" lg:w-[630px] text-center ">
             Being the leading automation, process, and system integration
-            company in our region, T Triangle has evolved into a total solution
+            company in our region, BOED Energy has evolved into a total solution
             provider for several process industries including the Food and
             Beverage industry.
           </p>
